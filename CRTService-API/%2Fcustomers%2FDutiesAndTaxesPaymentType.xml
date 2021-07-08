@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/DutiesAndTaxesPaymentType" path="/customers/DutiesAndTaxesPaymentType" id="6c37ebbf-c686-40c4-9e20-0ab667cd8b52" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6c37ebbf-c686-40c4-9e20-0ab667cd8b52fileName">%2Fcustomers%2FDutiesAndTaxesPaymentType</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SetDutiesAndTaxesPaymentType" id="980ffeaa-3cb4-4fd9-9d5d-cc757655d8ca" method="POST">
+    <con:description>Set customer duties and taxes payment type</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>paymentType</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="fb912b53-2a44-42dc-854f-51555a6f74c8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

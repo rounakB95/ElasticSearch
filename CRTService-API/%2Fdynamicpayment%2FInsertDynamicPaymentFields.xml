@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/dynamicpayment/InsertDynamicPaymentFields" path="/dynamicpayment/InsertDynamicPaymentFields" id="75b180a4-4bca-4db2-990b-21083f6c5525" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="75b180a4-4bca-4db2-990b-21083f6c5525fileName">%2Fdynamicpayment%2FInsertDynamicPaymentFields</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="InsertDynamicPaymentFields" id="96cb833e-76b5-4de8-b64d-933f1c201fe5" method="POST">
+    <con:description>Insert Dynamic PaymentFields</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="157c448b-631c-441f-b968-7568d7a1714e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

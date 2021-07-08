@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/GpFacilities" path="/customers/GpFacilities" id="64dee185-47d2-4e3c-95b1-7bf194fab9b9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="64dee185-47d2-4e3c-95b1-7bf194fab9b9fileName">%2Fcustomers%2FGpFacilities</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetGpFacilities" id="b4802f9f-1e2e-45fc-aaed-e917a2af21b3" method="GET">
+    <con:description>Get GP Facilities</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Items" : [ {
+    "ConsolidatorFacilityAddressID" : 0,
+    "FacilityCity" : "string",
+    "Address1" : "string",
+    "Address2" : "string",
+    "City" : "string",
+    "State" : "string",
+    "ToZip" : "string",
+    "CarrierID" : 0,
+    "ConsolidatorAccountNumber" : "string",
+    "MailerID" : "string",
+    "PresortFacilityCity" : "string",
+    "SecondaryManifestAccountNumber" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3db78bd9-6404-49a6-8188-838c29e36bee" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

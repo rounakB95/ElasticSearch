@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ddb0038e-269e-405d-a6c3-b61e1d72392f" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/PriceOrder" name="PriceOrder" bindingOperationName="PriceOrder" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b4c33b6d-c6ba-4677-be97-279393089c16fileName">PriceOrder</con:setting>
+    <con:setting id="ddb0038e-269e-405d-a6c3-b61e1d72392ffileName">PriceOrder</con:setting>
+  </con:settings>
+  <con:call id="0e2b9ba1-4d48-47ea-be2d-1a2252f318b1" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:PriceOrder>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <sws:Skus>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:Sku>\r
+               <sws:Id>?</sws:Id>\r
+               <!--Optional:-->\r
+               <sws:Quantity>0</sws:Quantity>\r
+               <!--Optional:-->\r
+               <sws:SkuSubTotal>0.0</sws:SkuSubTotal>\r
+            </sws:Sku>\r
+         </sws:Skus>\r
+         <!--Optional:-->\r
+         <sws:PromoCode/>\r
+         <sws:ShippingAddress>\r
+            <!--Optional:-->\r
+            <sws:FullName>?</sws:FullName>\r
+            <!--Optional:-->\r
+            <sws:NamePrefix>?</sws:NamePrefix>\r
+            <!--Optional:-->\r
+            <sws:FirstName>?</sws:FirstName>\r
+            <!--Optional:-->\r
+            <sws:MiddleName>?</sws:MiddleName>\r
+            <!--Optional:-->\r
+            <sws:LastName>?</sws:LastName>\r
+            <!--Optional:-->\r
+            <sws:NameSuffix>?</sws:NameSuffix>\r
+            <!--Optional:-->\r
+            <sws:Title>?</sws:Title>\r
+            <!--Optional:-->\r
+            <sws:Department>?</sws:Department>\r
+            <!--Optional:-->\r
+            <sws:Company>?</sws:Company>\r
+            <!--Optional:-->\r
+            <sws:Address1>?</sws:Address1>\r
+            <!--Optional:-->\r
+            <sws:Address2>?</sws:Address2>\r
+            <!--Optional:-->\r
+            <sws:Address3>?</sws:Address3>\r
+            <!--Optional:-->\r
+            <sws:City>?</sws:City>\r
+            <!--Optional:-->\r
+            <sws:State>?</sws:State>\r
+            <!--Optional:-->\r
+            <sws:ZIPCode>?</sws:ZIPCode>\r
+            <!--Optional:-->\r
+            <sws:ZIPCodeAddOn>?</sws:ZIPCodeAddOn>\r
+            <!--Optional:-->\r
+            <sws:DPB>?</sws:DPB>\r
+            <!--Optional:-->\r
+            <sws:CheckDigit>?</sws:CheckDigit>\r
+            <!--Optional:-->\r
+            <sws:Province>?</sws:Province>\r
+            <!--Optional:-->\r
+            <sws:PostalCode>?</sws:PostalCode>\r
+            <!--Optional:-->\r
+            <sws:Country>US</sws:Country>\r
+            <!--Optional:-->\r
+            <sws:Urbanization>?</sws:Urbanization>\r
+            <!--Optional:-->\r
+            <sws:PhoneNumber>?</sws:PhoneNumber>\r
+            <!--Optional:-->\r
+            <sws:Extension>?</sws:Extension>\r
+            <!--Optional:-->\r
+            <sws:CleanseHash>?</sws:CleanseHash>\r
+            <!--Optional:-->\r
+            <sws:OverrideHash>?</sws:OverrideHash>\r
+            <!--Optional:-->\r
+            <sws:EmailAddress>?</sws:EmailAddress>\r
+            <!--Optional:-->\r
+            <sws:FullAddress>?</sws:FullAddress>\r
+         </sws:ShippingAddress>\r
+      </sws:PriceOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/PriceOrder"/>
+  </con:call>
+</con:operation>

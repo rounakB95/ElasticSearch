@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="d06cd1a6-7da4-4983-a0b8-d67ad5cc0cca" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AddImage" name="AddImage" bindingOperationName="AddImage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d06cd1a6-7da4-4983-a0b8-d67ad5cc0ccafileName">AddImage</con:setting>
+  </con:settings>
+  <con:call id="23f400e4-e81f-4fc2-b570-2ccfac5a439b" name="AddImage Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AddImage>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:ImageName>?</sws:ImageName>\r
+         <sws:ImageData>?</sws:ImageData>\r
+         <!--Optional:-->\r
+         <sws:ImageCategory>?</sws:ImageCategory>\r
+      </sws:AddImage>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AddImage"/>
+  </con:call>
+</con:operation>

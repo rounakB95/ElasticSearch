@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/dynamicFeatureSettings" path="/customers/{custId}/dynamicFeatureSettings" id="6d2f53f8-5542-435a-a010-6c146321b461" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6d2f53f8-5542-435a-a010-6c146321b461fileName">%2Fcustomers%2F%7BcustId%7D%2FdynamicFeatureSettings</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetDynamicFeatureSettings" id="7f3330f1-179f-4dc7-9cb4-de78547d4a4d" method="GET">
+    <con:description>Get Dynamic Feature Settings for the customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "FeaturesList" : {
+    "additionalProp1" : {
+      "Name" : "string",
+      "Group" : "string",
+      "DisplayGroupId" : 0,
+      "DisplayGroupOrder" : 0,
+      "HiddenUnderAdvanced" : true,
+      "Description" : "string",
+      "FormType" : "string",
+      "DataType" : "string",
+      "Value" : "string",
+      "MinValue" : 1.5,
+      "MaxValue" : 1.5,
+      "MinCharLength" : 0,
+      "MaxCharLength" : 0,
+      "FeatureOptions" : "string",
+      "Required" : "string"
+    },
+    "additionalProp2" : {
+      "Name" : "string",
+      "Group" : "string",
+      "DisplayGroupId" : 0,
+      "DisplayGroupOrder" : 0,
+      "HiddenUnderAdvanced" : true,
+      "Description" : "string",
+      "FormType" : "string",
+      "DataType" : "string",
+      "Value" : "string",
+      "MinValue" : 1.5,
+      "MaxValue" : 1.5,
+      "MinCharLength" : 0,
+      "MaxCharLength" : 0,
+      "FeatureOptions" : "string",
+      "Required" : "string"
+    },
+    "additionalProp3" : {
+      "Name" : "string",
+      "Group" : "string",
+      "DisplayGroupId" : 0,
+      "DisplayGroupOrder" : 0,
+      "HiddenUnderAdvanced" : true,
+      "Description" : "string",
+      "FormType" : "string",
+      "DataType" : "string",
+      "Value" : "string",
+      "MinValue" : 1.5,
+      "MaxValue" : 1.5,
+      "MinCharLength" : 0,
+      "MaxCharLength" : 0,
+      "FeatureOptions" : "string",
+      "Required" : "string"
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="04a11c89-7822-47c6-beff-1bf51a974177" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="SetDynamicFeatureSettings" id="a2b65707-aa22-448c-a63f-697b3a83c290" method="POST">
+    <con:description>Set Dynamic Feature Settings for the customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d250f652-8c6a-4359-8523-ab7f9e1322a9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

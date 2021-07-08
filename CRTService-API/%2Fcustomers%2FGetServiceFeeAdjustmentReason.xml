@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/GetServiceFeeAdjustmentReason" path="/customers/GetServiceFeeAdjustmentReason" id="b04c3e84-7b8f-403a-a4a2-34ceea3b94fe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b04c3e84-7b8f-403a-a4a2-34ceea3b94fefileName">%2Fcustomers%2FGetServiceFeeAdjustmentReason</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetServiceFeeAdjustmentReasonCatalog" id="02fdc849-26df-4c1c-8a75-75b517a6327a" method="GET">
+    <con:description>Get Service Fee Adjustment Reason</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "Id" : 0,
+  "Description" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="598f7f25-5ae6-4607-a330-757947bd97dc" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

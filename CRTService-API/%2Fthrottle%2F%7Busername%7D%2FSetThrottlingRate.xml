@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/throttle/{username}/SetThrottlingRate" path="/throttle/{username}/SetThrottlingRate" id="eb107500-c35a-45b5-9583-2baf901ad633" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="eb107500-c35a-45b5-9583-2baf901ad633fileName">%2Fthrottle%2F%7Busername%7D%2FSetThrottlingRate</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>username</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Throttle_SetThrottlingRate" id="9887ef97-2709-4440-82fe-e40c0d0d7790" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>userId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>throttleID</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>bucketLimit</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>refillSize</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>refillIntervalMS</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="bd30d907-ce00-44dd-b912-7ee4ced4efab" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

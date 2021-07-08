@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8c9345e4-9a9a-45d6-b85c-a1c9d404d58e" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetAccountInfo" name="GetAccountInfo" bindingOperationName="GetAccountInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8321cfda-74d6-46c6-8851-739089230e3dfileName">GetAccountInfo</con:setting>
+    <con:setting id="8c9345e4-9a9a-45d6-b85c-a1c9d404d58efileName">GetAccountInfo</con:setting>
+  </con:settings>
+  <con:call id="42ede35e-c69c-4a00-be79-041cf77e39f5" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetAccountInfo>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:GetAccountInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetAccountInfo"/>
+  </con:call>
+  <con:call id="8fa2eec4-7d9a-4705-8385-bdd2f9d42e28" name="GAI_Initial">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SOAPAction" value="${#Project#Namespace}/GetAccountInfo" xmlns="http://eviware.com/soapui/config"/></con:setting>
+    </con:settings>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetAccountInfo>\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>${Users#IntegrationID}</sws:IntegrationID>\r
+            <sws:Username>${Users#Username}</sws:Username>\r
+            <sws:Password>${Users#Password}</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:GetAccountInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:jmsPropertyConfig/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetAccountInfo"/>
+    <con:wsrmConfig version="1.2"/>
+  </con:call>
+</con:operation>

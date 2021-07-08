@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8616c94e-1841-4072-86f4-8b82bfcfaef9" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/SetCodeWords" name="SetCodeWords" bindingOperationName="SetCodeWords" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4f0ed7c7-e7c5-4750-a86b-3810eec881a7fileName">SetCodeWords</con:setting>
+    <con:setting id="8616c94e-1841-4072-86f4-8b82bfcfaef9fileName">SetCodeWords</con:setting>
+  </con:settings>
+  <con:call id="909a9730-5524-410f-9ee8-1cdf9214fa92" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:SetCodeWords>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Codeword1Type>?</sws:Codeword1Type>\r
+         <!--Optional:-->\r
+         <sws:Codeword1>?</sws:Codeword1>\r
+         <!--Optional:-->\r
+         <sws:Codeword2Type>?</sws:Codeword2Type>\r
+         <!--Optional:-->\r
+         <sws:Codeword2>?</sws:Codeword2>\r
+      </sws:SetCodeWords>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/SetCodeWords"/>
+  </con:call>
+</con:operation>

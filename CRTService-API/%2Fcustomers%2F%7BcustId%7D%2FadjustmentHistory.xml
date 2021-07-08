@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/adjustmentHistory" path="/customers/{custId}/adjustmentHistory" id="f3911e8c-4ac9-41b9-a7c4-34110e368c70" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f3911e8c-4ac9-41b9-a7c4-34110e368c70fileName">%2Fcustomers%2F%7BcustId%7D%2FadjustmentHistory</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetAdjustmentHistory" id="244aa87a-e538-4db2-a39f-61cd47761f53" method="GET">
+    <con:description>Get Adjustment History</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>startDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>endDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageSize</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Transactions" : [ {
+    "AdjustmentDate" : "2015-07-20T15:49:04-07:00",
+    "AdjustmentStatus" : "string",
+    "TrackingNumber" : "string",
+    "AdjustmentId" : "string",
+    "AdjustmentReason" : "string",
+    "ActualAmount" : 1.5,
+    "AdjAmount" : 1.5,
+    "OriginalAmount" : 1.5,
+    "Carrier" : "string",
+    "OriginalService" : "string",
+    "OriginalPackaging" : "string",
+    "OriginalWeight" : 1.5,
+    "OriginalLength" : 1.5,
+    "OriginalWidth" : 1.5,
+    "OriginalHeight" : 1.5,
+    "OriginalFromZip" : "string",
+    "OriginalToZip" : "string",
+    "OriginalToCountry" : "string",
+    "PrintDate" : "2015-07-20T15:49:04-07:00",
+    "ActualService" : "string",
+    "ActualPackaging" : "string",
+    "ActualWeight" : 1.5,
+    "ActualLength" : 1.5,
+    "ActualWidth" : 1.5,
+    "ActualHeight" : 1.5,
+    "ActualFromZip" : "string",
+    "ActualToZip" : "string",
+    "ActualToCountry" : "string"
+  } ],
+  "LinkHeaders" : {
+    "Links" : [ {
+      "Url" : "string",
+      "Rel" : "string",
+      "Method" : "string"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c934c449-f964-45f6-bf13-8f89220adb28" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

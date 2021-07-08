@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bd553d37-565e-423a-879a-d03ddc27d134" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/AuthenticateUser" name="AuthenticateUser" bindingOperationName="AuthenticateUser" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5843305d-862a-40d8-be2b-88a7a0697685fileName">AuthenticateUser</con:setting>
+    <con:setting id="bd553d37-565e-423a-879a-d03ddc27d134fileName">AuthenticateUser</con:setting>
+  </con:settings>
+  <con:call id="d05edcf0-f18c-4cf7-913a-4a8870602fa2" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AuthenticateUser>\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+      </sws:AuthenticateUser>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/AuthenticateUser"/>
+  </con:call>
+</con:operation>

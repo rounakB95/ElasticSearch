@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/{userId}/GetPaymentAccounts" path="/customers/{custId}/{userId}/GetPaymentAccounts" id="941e4a7c-ef9d-4451-9360-9ed131bf4efd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="941e4a7c-ef9d-4451-9360-9ed131bf4efdfileName">%2Fcustomers%2F%7BcustId%7D%2F%7BuserId%7D%2FGetPaymentAccounts</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>userId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetPaymentAccounts" id="54f1a72f-71e1-49d9-a8c1-281c2f6db537" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CustId" : 0,
+  "PaymentAccounts" : [ {
+    "PaymentAccountId" : 1.5,
+    "PaymentAccountType" : "None",
+    "NickName" : "string",
+    "AccountHolderName" : "string",
+    "AccountNumber" : "string",
+    "AccountType" : "string",
+    "ExpiryDate" : "string",
+    "BillingAddress" : {
+      "Address1" : "string",
+      "Address2" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string",
+      "Country" : "string"
+    },
+    "CVN" : "string",
+    "BankName" : "string",
+    "RoutingNumber" : "string",
+    "AccountNumberDisplayDigits" : "string"
+  } ],
+  "PaymentAccountForChargeCategory" : {
+    "Postage" : 1.5,
+    "ServiceFee" : 1.5,
+    "Store" : 1.5
+  },
+  "ChargeCategoryUsingCorporationPaymentAccount" : {
+    "Postage" : true,
+    "Service" : true,
+    "Store" : true,
+    "OverridePaymentAccounts" : [ {
+      "PaymentAccountId" : 1.5,
+      "PaymentAccountType" : "None",
+      "NickName" : "string",
+      "AccountHolderName" : "string",
+      "AccountNumber" : "string",
+      "AccountType" : "string",
+      "ExpiryDate" : "string",
+      "BillingAddress" : {
+        "Address1" : "string",
+        "Address2" : "string",
+        "City" : "string",
+        "State" : "string",
+        "Zip" : "string",
+        "Country" : "string"
+      },
+      "CVN" : "string",
+      "BankName" : "string",
+      "RoutingNumber" : "string",
+      "AccountNumberDisplayDigits" : "string"
+    } ]
+  },
+  "ChargeCategoryUsingInvoicing" : {
+    "IsPostageInvoiced" : true,
+    "IsStoreInvoiced" : true,
+    "IsServiceFeeInvoiced" : true
+  },
+  "ChargeCategoryUsingOMAS" : {
+    "IsPostageEnabled" : true,
+    "OmasAccountId" : "string"
+  },
+  "ChargeCategoryUsingEPS" : {
+    "EPSAccountNumber" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="bacf1deb-61c8-4c3a-8cc8-f00b8bfda552" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

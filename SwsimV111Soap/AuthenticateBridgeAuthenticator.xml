@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="379430e2-1a4f-4d3f-92d0-bbeb9004651c" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AuthenticateBridgeAuthenticator" name="AuthenticateBridgeAuthenticator" bindingOperationName="AuthenticateBridgeAuthenticator" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="379430e2-1a4f-4d3f-92d0-bbeb9004651cfileName">AuthenticateBridgeAuthenticator</con:setting>
+  </con:settings>
+  <con:call id="6eaba766-d0b1-4573-8667-43750cf13ec3" name="AuthenticateBridgeAuthenticator Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AuthenticateBridgeAuthenticator>\r
+         <sws:integrationID>?</sws:integrationID>\r
+         <sws:batchAuthenticator>?</sws:batchAuthenticator>\r
+      </sws:AuthenticateBridgeAuthenticator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AuthenticateBridgeAuthenticator"/>
+  </con:call>
+</con:operation>

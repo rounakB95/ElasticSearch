@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c14f16cd-5b40-4146-954c-0b3d3366f178" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/TrackShipment" name="TrackShipment" bindingOperationName="TrackShipment" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="728e046d-7244-4bb2-9f8b-6762b35d02f8fileName">TrackShipment</con:setting>
+    <con:setting id="c14f16cd-5b40-4146-954c-0b3d3366f178fileName">TrackShipment</con:setting>
+  </con:settings>
+  <con:call id="08f028dd-07da-4b87-a929-00bb0e678547" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:TrackShipment>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <sws:StampsTxID>?</sws:StampsTxID>\r
+         <!--Optional:-->\r
+         <sws:TrackingNumber>?</sws:TrackingNumber>\r
+      </sws:TrackShipment>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/TrackShipment"/>
+  </con:call>
+</con:operation>

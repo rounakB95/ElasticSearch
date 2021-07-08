@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="92a43acc-6bab-4c57-ac21-f0bb07e72fb3" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/AuthenticateWithTransferAuthenticator" name="AuthenticateWithTransferAuthenticator" bindingOperationName="AuthenticateWithTransferAuthenticator" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a5eba1c7-43cf-4932-aef9-a3ca3bbadf81fileName">AuthenticateWithTransferAuthenticator</con:setting>
+    <con:setting id="92a43acc-6bab-4c57-ac21-f0bb07e72fb3fileName">AuthenticateWithTransferAuthenticator</con:setting>
+  </con:settings>
+  <con:call id="35d3e963-b058-449a-ba84-c03332b09573" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AuthenticateWithTransferAuthenticator>\r
+         <sws:integrationID>?</sws:integrationID>\r
+         <sws:transferAuthenticator>?</sws:transferAuthenticator>\r
+      </sws:AuthenticateWithTransferAuthenticator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/AuthenticateWithTransferAuthenticator"/>
+  </con:call>
+</con:operation>

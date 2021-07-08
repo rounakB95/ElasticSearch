@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b06333f1-54c0-4625-8e7a-04bfcdcc4d5d" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/ReprintIndicium" name="ReprintIndicium" bindingOperationName="ReprintIndicium" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b06333f1-54c0-4625-8e7a-04bfcdcc4d5dfileName">ReprintIndicium</con:setting>
+  </con:settings>
+  <con:call id="7cd0f3f2-21b1-4079-aa2f-02e6cb31865d" name="ReprintIndicium Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:ReprintIndicium>\r
+         <sws:indiciumRequest>\r
+            <!--You have a CHOICE of the next 2 items at this level-->\r
+            <!--Optional:-->\r
+            <sws:Authenticator>?</sws:Authenticator>\r
+            <!--Optional:-->\r
+            <sws:Credentials>\r
+               <sws:IntegrationID>?</sws:IntegrationID>\r
+               <sws:Username>?</sws:Username>\r
+               <sws:Password>?</sws:Password>\r
+            </sws:Credentials>\r
+            <!--Optional:-->\r
+            <sws:IntegratorTxId>?</sws:IntegratorTxId>\r
+            <!--Optional:-->\r
+            <sws:StampsTxId>?</sws:StampsTxId>\r
+            <!--Optional:-->\r
+            <sws:TrackingNumber>?</sws:TrackingNumber>\r
+            <!--Optional:-->\r
+            <sws:ImageType>Auto</sws:ImageType>\r
+            <!--Optional:-->\r
+            <sws:ImageDpi>ImageDpiDefault</sws:ImageDpi>\r
+            <!--Optional:-->\r
+            <sws:EltronPrinterDpiType>Default</sws:EltronPrinterDpiType>\r
+            <sws:RotationDegrees>?</sws:RotationDegrees>\r
+            <!--Optional:-->\r
+            <sws:HorizontalOffset>-1</sws:HorizontalOffset>\r
+            <!--Optional:-->\r
+            <sws:VerticalOffset>-1</sws:VerticalOffset>\r
+            <!--Optional:-->\r
+            <sws:PrintDensity>-1</sws:PrintDensity>\r
+            <!--Optional:-->\r
+            <sws:PaperSize>Default</sws:PaperSize>\r
+            <sws:StartRow>?</sws:StartRow>\r
+            <sws:StartColumn>?</sws:StartColumn>\r
+            <!--Optional:-->\r
+            <sws:ReturnImageData>false</sws:ReturnImageData>\r
+            <!--Optional:-->\r
+            <sws:ReturnIndiciumData>false</sws:ReturnIndiciumData>\r
+         </sws:indiciumRequest>\r
+      </sws:ReprintIndicium>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/ReprintIndicium"/>
+  </con:call>
+</con:operation>

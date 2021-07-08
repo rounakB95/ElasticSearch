@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4af4eaff-a3ba-4b0a-a039-ab835673a42c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="UPS" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4af4eaff-a3ba-4b0a-a039-ab835673a42cfileName">UPS</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Print" id="b4873015-c0b6-4051-99bc-e8d21ef0ef3e">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Letter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">03103</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">75215</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Small</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">77009</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Medium</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">78228</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Large</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">75220</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pak</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">33135</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Tube</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">46202</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-NDAS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Letter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">04330</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DAA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">39213</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DAA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Small</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">03103</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DAA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Medium</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">78753</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DAA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Large</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">77009</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DAA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pak</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">78228</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DAA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Tube</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">75220</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DAA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Letter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">80204</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">80204</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Small</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">67203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Medium</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">82609</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Large</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">63108</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pak</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">01035</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Tube</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">78753</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-2DA</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Letter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">77009</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-3DS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">78228</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-GD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">75220</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-SD</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">60608</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">19901</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">10 KG Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">70806</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">25 KG Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">55403</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Small</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">89117</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Medium</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">78753</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Large</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">77009</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pak</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>US&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">78228</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Tube</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BF&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WES</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Letter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>CA&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BR&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">10 KG Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BR&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">25 KG Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BS&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Small</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BT&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Medium</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BR&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Large</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BR&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pak</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Tube</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WESP</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Letter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AT&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Small</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Medium</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Large</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AT&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pak</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Tube</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BA&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">10 KG Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AT&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">25 KG Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>AU&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Small</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BF&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Medium</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BG&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Express Box Large</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BH&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Pak</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BI&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Tube</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BJ&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">UPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">UPS-WSR</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Letter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">&lt;sws:ToCountry>BL&lt;/sws:ToCountry></con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>Carrier</con:property>
+      <con:property>Service Type</con:property>
+      <con:property>Package Type</con:property>
+      <con:property>ToCountry</con:property>
+      <con:property>ToZip</con:property>
+      <con:property>ToAddress</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="74495de0-c681-44d6-a6af-23a51c538978" name="Create Indicium">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV111Soap</con:interface>
+      <con:operation>CreateIndicium</con:operation>
+      <con:request name="Create Indicium" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="10a8cc89-181f-4e58-afbe-a1ae226e9193">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SoapAction" value="${#Project#Namespace}/CreateIndicium" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:CreateIndicium>
+         <sws:Credentials>
+            <sws:IntegrationID>C27D7CDC-076E-4D62-98AA-AE45BF9B4B96</sws:IntegrationID>
+            <sws:Username>hng_sas_04</sws:Username>
+            <sws:Password>mylittlepiny!1</sws:Password>
+         </sws:Credentials>
+         <sws:IntegratorTxID>${=java.util.UUID.randomUUID()}</sws:IntegratorTxID>
+         <sws:Rate>
+            <sws:From>
+               <sws:FullName>Rounak Bandyopadhyay</sws:FullName>
+               <sws:Address1>4444 WESTHEIMER RD #313D</sws:Address1>
+               <sws:City>HOUSTON</sws:City>
+               <sws:State>TX</sws:State>
+               <sws:ZIPCode>77027</sws:ZIPCode>
+               <sws:PhoneNumber>6509876543</sws:PhoneNumber>
+               <sws:EmailAddress>rbandyopadhyay@stamps.com</sws:EmailAddress>
+            </sws:From>
+            <sws:To>
+               <sws:FullName>BEN REILLY</sws:FullName>
+               <sws:Company>LARGE ENVELOPE OR FLAT</sws:Company>
+<!--               <sws:ZIPCode>${Print#ToZip}</sws:ZIPCode>-->
+<!--               ${Print#ToCountry}-->
+               ${Print#ToAddress}
+               <sws:PhoneNumber>8884340055</sws:PhoneNumber>
+            </sws:To>
+            <sws:ServiceType>${Print#Service Type}</sws:ServiceType>
+            <sws:PrintLayout>Normal4X6</sws:PrintLayout>
+            <sws:WeightOz>1</sws:WeightOz>
+            <sws:PackageType>${Print#Package Type}</sws:PackageType>
+            <sws:Length>0.5</sws:Length>
+            <sws:Width>0.5</sws:Width>
+            <sws:Height>0.5</sws:Height>
+            <sws:ShipDate>${#Project#ShipDate}</sws:ShipDate>
+            <sws:DeclaredValue>50</sws:DeclaredValue>
+         </sws:Rate>
+         <sws:Customs>
+            <sws:ContentType>Merchandise</sws:ContentType>
+            <sws:LicenseNumber>License 123</sws:LicenseNumber>
+            <sws:CertificateNumber>Cert No. 345</sws:CertificateNumber>
+            <sws:InvoiceNumber>Invoice 678</sws:InvoiceNumber>
+            <sws:CustomsLines>
+               <sws:CustomsLine>
+                  <sws:Description>Merchandise</sws:Description>
+                  <sws:Quantity>1</sws:Quantity>
+                  <sws:Value>3.99</sws:Value>
+                  <sws:WeightOz>1</sws:WeightOz>
+                  <sws:HSTariffNumber>123456</sws:HSTariffNumber>
+                  <sws:CountryOfOrigin>US</sws:CountryOfOrigin>
+               </sws:CustomsLine>
+            </sws:CustomsLines>
+            <sws:SendersCustomsReference>Senders</sws:SendersCustomsReference>
+         </sws:Customs>
+         <sws:ImageType>Pdf</sws:ImageType>
+         <sws:nonDeliveryOption>Abandon</sws:nonDeliveryOption>
+         <!--<sws:GroupCode>${Services#GroupCode}</sws:GroupCode>
+         <sws:Description>${Services#Description}</sws:Description>-->
+      </sws:CreateIndicium>
+    <sws1:CreateIndicium xmlns:sws1="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111"><sws1:IntegratorTxID/><sws1:Rate><sws1:From/><sws1:To/></sws1:Rate></sws1:CreateIndicium></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="db998173-38e9-4d63-a324-da27124767db" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="75566402-056c-48b8-a370-753973b72a74" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/CreateIndicium"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="5bd93061-35d2-4855-adb8-e4f5b1312a0a" name="Account Info">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV111Soap</con:interface>
+      <con:operation>GetAccountInfo</con:operation>
+      <con:request name="Account Info" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="85a5f0dd-c607-4978-8d43-db1b2622f28e">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SoapAction" value="${#Project#Namespace}/GetAccountInfo" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:GetAccountInfo>
+         <sws:Credentials>
+              <sws:IntegrationID>C27D7CDC-076E-4D62-98AA-AE45BF9B4B96</sws:IntegrationID>
+            <sws:Username>rband459668</sws:Username>
+            <sws:Password>pass1$</sws:Password>
+         </sws:Credentials>
+      </sws:GetAccountInfo>
+   <sws1:GetAccountInfo xmlns:sws1="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111"/></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="cb9f4326-8a15-46ad-b5ca-62708b3fe0a2" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="badd569f-a798-479a-98d2-2a3400872309" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetAccountInfo"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink1" id="ba9c44dd-4c39-4b1f-8e9c-018b07d85fe1">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>PackageType</con:name>
+          <con:value>${Print#Package Type}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>serviceType</con:name>
+          <con:value>${Print#Service Type}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>TrackingNumber</con:name>
+          <con:value>${Create Indicium#Response#declare namespace ns1='http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111'; //ns1:CreateIndiciumResponse[1]/ns1:TrackingNumber[1]}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Check Database" id="b1b05257-d8c4-4713-ac1d-60c6e083f48b" disabled="true">
+    <con:settings/>
+    <con:config>
+      <script>import groovy.sql.Sql;
+
+// For this Groovy you need to grab the TrackingNumber from &lt;CreateIndicium>
+def trackingNumber = context.expand( '${DataSink1#TrackingNumber}' )
+ 
+// Then log TrackingNumber
+log.info("TrackingNumber:"+trackingNumber)
+
+// Build and log ConnectionString
+def pOSTALDBServer = context.expand( '${#Project#POSTALDBServer}' )
+def connectionString = "jdbc:sqlserver://"+pOSTALDBServer+":1433;databaseName=Postal;user=qalab;password=StampsQA!"
+
+def commandTest = "SELECT  * FROM [Postal].[dbo].[sdct_Postal_UniversalPrintLog] where ConfirmationNumber = '"+trackingNumber+"'"
+def results =  GetValueFromDb(connectionString,commandTest)
+
+//get all the data points need to be verified
+def UniversalPostageID = 	results[0].UniversalPostageID
+testRunner.testCase.setPropertyValue("UniversalPostageID", UniversalPostageID.toString())
+
+def StampsTxID = results[0].StampsTxID
+testRunner.testCase.setPropertyValue("StampsTxID", StampsTxID)
+
+def ConfirmationNumber = results[0].ConfirmationNumber
+testRunner.testCase.setPropertyValue("ConfirmationNumber", ConfirmationNumber)
+
+def CustId = results[0].CustId
+testRunner.testCase.setPropertyValue("CustId", CustId.toString())
+
+def IntegratorTxID = results[0].IntegratorTxID
+testRunner.testCase.setPropertyValue("IntegratorTxID", IntegratorTxID)
+
+
+
+
+// Now log each of these values in the DataSink
+log.info("UniversalPostageID:"+UniversalPostageID)
+log.info("StampsTxID:"+StampsTxID)
+log.info("ConfirmationNumber:"+ConfirmationNumber)
+
+
+testRunner.testCase.setPropertyValue("UniversalPostageID", UniversalPostageID.toString())
+testRunner.testCase.setPropertyValue("StampsTxID",StampsTxID.toString())
+testRunner.testCase.setPropertyValue("ConfirmationNumber",ConfirmationNumber.toString())
+
+
+////////// METHOD //////////////
+def ArrayList GetValueFromDb(String ConnectionString, String CommandTest){
+	//ArrayList tmpValues = []; 
+	def sql = Sql.newInstance(ConnectionString, "com.microsoft.sqlserver.jdbc.SQLServerDriver")
+	def results = sql.rows(CommandTest)
+	
+	return results;
+}</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="10000" id="9cb7e222-9627-4110-9d94-f9eaab2cd7cf" disabled="true">
+    <con:settings/>
+    <con:config>
+      <delay>1000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DB Data Sink" id="4f2642f6-1d3d-4269-a49b-3fb873c73a27" disabled="true">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>UniversalPostageID</con:name>
+          <con:value>${#TestCase#UniversalPostageID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>StampsTxID</con:name>
+          <con:value>${#TestCase#StampsTxID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>ConfirmationNumber</con:name>
+          <con:value>${#TestCase#ConfirmationNumber}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>CustId</con:name>
+          <con:value>${#TestCase#CustId}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>IntegratorTxID</con:name>
+          <con:value>${#TestCase#IntegratorTxID}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="Elastic Search" id="dcee98ea-95c0-43db-a423-3c8dfa64548c" disabled="true">
+    <con:settings/>
+    <con:config method="POST" xsi:type="con:HttpRequest" id="10ca0323-22f6-45f9-babc-9da32b5b3993" name="Elastic Search" downloadIncludedResources="false" postQueryString="false" mediaType="application/json" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://vpc-qa007-printhistory-index-t2vuxykqylxrjgqulhezacs2re.us-west-1.es.amazonaws.com/printlog-06-2021/_search?</con:endpoint>
+      <con:request>{
+    "query": {
+                "match" : {  "_id" : "${#TestCase#UniversalPostageID}"}
+            }
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="ELastic Search verification" id="162e5291-eb15-4527-9812-b2be43d52daf" disabled="true">
+    <con:settings/>
+    <con:config>
+      <script>// can only be done once we get the end point up and running.
+def hits = context.expand( '${Elastic Search#Response#$[\'hits\'][\'total\'][\'value\']}' )
+def tracking_number = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'tracking_number\']}' )
+def Cust_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'cust_id\']}' )
+def Universal_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'universal_id\']}' )
+def carrier = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'carrier\']}' )
+def username = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'username\']}' )
+def tx_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'label_id\']}' )
+
+
+if(hits == "1"){
+	log.info(tracking_number)
+	log.info(Cust_id)
+	log.info(Universal_id)
+	log.info(carrier)
+	log.info(username)
+	log.info(tx_id)
+	
+}else{
+	log.info("Number of hits is greater than 1:"+hits)
+}</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="89dfcf68-28ca-4442-b5bc-3366e69d6069">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Print</dataSourceStep>
+      <targetStep>Create Indicium</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>UniversalPostageID</con:name>
+      <con:value>6276236422</con:value>
+    </con:property>
+    <con:property>
+      <con:name>StampsTxID</con:name>
+      <con:value>AF517000-0597-4EF0-AF1E-08120C4B34FA</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConfirmationNumber</con:name>
+      <con:value>9274890233787082501609</con:value>
+    </con:property>
+    <con:property>
+      <con:name>CustId</con:name>
+      <con:value>7465291</con:value>
+    </con:property>
+    <con:property>
+      <con:name>IntegratorTxID</con:name>
+      <con:value>0397aa29-a601-42dc-8a9d-50898664b32a</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>75790b87-5b4d-4d22-b1ea-197175ecbc31</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>7fbb0494-edc9-4298-bb80-37bcb28af21c</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

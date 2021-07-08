@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="98b50929-f21a-42c6-a31b-279b70789b1b" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AuthenticateWithTransferAuthenticator" name="AuthenticateWithTransferAuthenticator" bindingOperationName="AuthenticateWithTransferAuthenticator" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="98b50929-f21a-42c6-a31b-279b70789b1bfileName">AuthenticateWithTransferAuthenticator</con:setting>
+  </con:settings>
+  <con:call id="fdb2471c-58a2-451e-95ae-0e6227fe2c3d" name="AuthenticateWithTransferAuthenticator Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AuthenticateWithTransferAuthenticator>\r
+         <sws:integrationID>?</sws:integrationID>\r
+         <sws:transferAuthenticator>?</sws:transferAuthenticator>\r
+      </sws:AuthenticateWithTransferAuthenticator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AuthenticateWithTransferAuthenticator"/>
+  </con:call>
+</con:operation>

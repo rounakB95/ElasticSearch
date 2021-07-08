@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/Resellers/{postagePurchaseAmount}/{meterNumber}" path="/meters/Resellers/{postagePurchaseAmount}/{meterNumber}" id="9275adae-be92-4b20-8108-d61644aa1c16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9275adae-be92-4b20-8108-d61644aa1c16fileName">%2Fmeters%2FResellers%2F%7BpostagePurchaseAmount%7D%2F%7BmeterNumber%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>meterNumber</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>postagePurchaseAmount</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="SasPurchasePostage" id="1b8ad981-1bfa-41ee-94cb-6c7d3e8f42cd" method="POST">
+    <con:description>Sas Meter Purchase Postage</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "PurchaseStatus" : "Pending",
+  "TransactionId" : 0,
+  "RejectionReason" : "string",
+  "MeterInfo" : {
+    "ResellerId" : 0,
+    "ResellerMeterPoolId" : 0,
+    "MeterNumber" : 0,
+    "ResellerMeterCustId" : 0,
+    "PostalClusterNumber" : 0,
+    "DescRegInBridge" : 1.5,
+    "AccountAutoBuyThreshold" : 1.5,
+    "AccountAutoBuyAmount" : 1.5,
+    "StampsFundingThreshold" : 1.5,
+    "StampsFundingAmount" : 1.5,
+    "AutoBuyThreshold" : 1.5,
+    "AutoBuyAmount" : 1.5,
+    "LastPostagePurchaseTransactionId" : 0,
+    "LastCustomerFundingLogId" : 0,
+    "Status" : "string",
+    "AmtAvailInPostal" : 1.5,
+    "AmtUtlInPostal" : 1.5,
+    "LastPurchaseTime" : "2015-07-20T15:49:04-07:00",
+    "LastPrintTime" : "2015-07-20T15:49:04-07:00"
+  },
+  "ErrorMessage" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="8f603661-44d4-4fc4-8242-d708c696de19" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

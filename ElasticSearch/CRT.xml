@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="638807b1-f739-4999-bfb2-4df082b92b10" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CRT" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="638807b1-f739-4999-bfb2-4df082b92b10fileName">CRT</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Search cust" id="9594c434-bd30-47fe-af12-ae7ed6dee964">
+    <con:settings/>
+    <con:config service="CRTService API" methodName="SearchCustomers" resourcePath="/CRTService/v1/customers/search" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Search cust" id="42c18ceb-4114-4baa-9820-108f6656b897" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://crtsvc.qa007.aws.local</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/CRTService/v1/customers/search</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="f4844041-c3ac-47f2-a51d-1ac60ec3977d" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="maxRows" value="2"/>
+          <con:entry key="CustId" value="7465284"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get Feature Settings" id="02124348-5edd-46d0-af60-98f0d1a98f9e">
+    <con:settings/>
+    <con:config service="CRTService API" methodName="GetFeatureSettings" resourcePath="/CRTService/v1/customers/featureSettings" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get Feature Settings" id="63c9ef83-4f09-45d9-8a39-ec3cab1257db" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://crtsvc.qa007.aws.local</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/CRTService/v1/customers/featureSettings</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="ba533244-00dd-4cea-a889-b5f1bb474a65" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="custId" value="7465284"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Set Feature Settings" id="c2657e20-c98e-46ce-a469-aae0d4294818">
+    <con:settings/>
+    <con:config service="CRTService API" methodName="SetFeatureSettings" resourcePath="/CRTService/v1/customers/featureSettings" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Set Feature Settings" id="68ea62cc-c3e3-49c9-9d1f-3311e6a7e544" mediaType="application/xml" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://crtsvc.qa007.aws.local</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="6c5ed24e-9405-4eef-bf7a-f9a235eda59d" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

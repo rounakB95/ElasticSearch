@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="fd7fdd60-bab6-440f-924f-936708e9a89d" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetCodewordQuestions" name="GetCodewordQuestions" bindingOperationName="GetCodewordQuestions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0e093100-999d-40a6-bafa-e36a8949d35ffileName">GetCodewordQuestions</con:setting>
+    <con:setting id="fd7fdd60-bab6-440f-924f-936708e9a89dfileName">GetCodewordQuestions</con:setting>
+  </con:settings>
+  <con:call id="14002831-c4f4-4402-831f-2d7e0a86dc7b" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetCodewordQuestions>\r
+         <sws:Username>?</sws:Username>\r
+         <!--Optional:-->\r
+         <sws:IntegrationId>?</sws:IntegrationId>\r
+      </sws:GetCodewordQuestions>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetCodewordQuestions"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="726afd91-ad08-46f4-aeb2-cfac7a214308" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/ChangeDefaultPaymentMethod" name="ChangeDefaultPaymentMethod" bindingOperationName="ChangeDefaultPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="726afd91-ad08-46f4-aeb2-cfac7a214308fileName">ChangeDefaultPaymentMethod</con:setting>
+  </con:settings>
+  <con:call id="f4bf3525-df86-4832-aeea-6822fdc4d2c5" name="ChangeDefaultPaymentMethod Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:ChangeDefaultPaymentMethod>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:MachineInfo>\r
+            <sws:IPAddress>?</sws:IPAddress>\r
+            <!--Optional:-->\r
+            <sws:MacAddress>?</sws:MacAddress>\r
+            <!--Optional:-->\r
+            <sws:FP>\r
+               <!--Optional:-->\r
+               <sws:FP1>cid:227851234517</sws:FP1>\r
+               <!--Optional:-->\r
+               <sws:FP2>cid:1212203813663</sws:FP2>\r
+               <!--Optional:-->\r
+               <sws:FP3>cid:729166984950</sws:FP3>\r
+               <!--Optional:-->\r
+               <sws:FP4>cid:337605731060</sws:FP4>\r
+               <!--Optional:-->\r
+               <sws:FP5>cid:1193760046836</sws:FP5>\r
+            </sws:FP>\r
+         </sws:MachineInfo>\r
+         <!--Optional:-->\r
+         <sws:PaymentType>?</sws:PaymentType>\r
+         <!--Optional:-->\r
+         <sws:PaymentMethodID>?</sws:PaymentMethodID>\r
+         <!--Optional:-->\r
+         <sws:SendEmail>?</sws:SendEmail>\r
+      </sws:ChangeDefaultPaymentMethod>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/ChangeDefaultPaymentMethod"/>
+  </con:call>
+</con:operation>

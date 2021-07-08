@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/InsuranceHistory" path="/customers/InsuranceHistory" id="4a99772d-e075-4b2b-896c-0dd0a80b53b7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4a99772d-e075-4b2b-896c-0dd0a80b53b7fileName">%2Fcustomers%2FInsuranceHistory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetInsuranceHistory" id="5fe978fd-c385-4dea-81ed-4e5fdec321ee" method="GET">
+    <con:description>Get Insurance History</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>startDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>endDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Items" : [ {
+    "InsuranceId" : "string",
+    "PrintDate" : "2015-07-20T15:49:04-07:00",
+    "ShipDate" : "2015-07-20T15:49:04-07:00",
+    "AmountPaid" : 1.5,
+    "InsuredFor" : 1.5,
+    "Destination" : "string",
+    "TrackingNumber" : "string",
+    "Status" : "Purchased"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="9fb3a3af-1024-4f7b-9dd2-6c2c4eda8abf" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

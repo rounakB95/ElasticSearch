@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/platform-defaults" path="/platform-management/platform-defaults" id="75b9b45b-fdaa-44b9-8e5e-4c1909e50ee6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="75b9b45b-fdaa-44b9-8e5e-4c1909e50ee6fileName">%2Fplatform-management%2Fplatform-defaults</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetPlatformDefaults" id="c3956057-b7f6-4dde-b0a4-edfb9794c75c" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "reseller_partners" : [ {
+    "reseller_partner_id" : 0,
+    "description" : "string",
+    "contact_name" : "string",
+    "address_1" : "string",
+    "address_2" : "string",
+    "city" : "string",
+    "state" : "string",
+    "postal_code" : "string",
+    "email_address" : "string",
+    "phone" : "string"
+  } ],
+  "reseller_default_info" : {
+    "lowest_available_reseller_id" : 0,
+    "last_available_reseller_id" : 0
+  },
+  "default_funding_info" : [ {
+    "platform_meter_pool_type" : { },
+    "customer_funding_threshold" : 1.5,
+    "stamps_funding_threshold" : 1.5,
+    "stamps_funding_amount" : 1.5,
+    "minimum_transaction_value" : 1.5
+  } ],
+  "reseller_partner_pricing_tiers" : [ {
+    "id" : 0,
+    "description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="b62de3ff-6245-409e-9f9c-f138b2adbcf2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

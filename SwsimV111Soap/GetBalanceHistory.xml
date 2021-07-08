@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e0890e29-a98c-4bff-8918-4b49b61e6b6d" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetBalanceHistory" name="GetBalanceHistory" bindingOperationName="GetBalanceHistory" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e0890e29-a98c-4bff-8918-4b49b61e6b6dfileName">GetBalanceHistory</con:setting>
+  </con:settings>
+  <con:call id="17c5fe8b-9c96-44d1-a4f9-82c9c2b11199" name="GetBalanceHistory Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetBalanceHistory>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:TransactionsPerPage>?</sws:TransactionsPerPage>\r
+         <sws:TransactionDateMin>?</sws:TransactionDateMin>\r
+         <!--Optional:-->\r
+         <sws:TransactionDateMax>?</sws:TransactionDateMax>\r
+         <sws:Filters>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:TransactionType>?</sws:TransactionType>\r
+         </sws:Filters>\r
+      </sws:GetBalanceHistory>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetBalanceHistory"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="58ba95c5-15db-4958-a1bf-1907c80f29c3" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/StartAccountVerification" name="StartAccountVerification" bindingOperationName="StartAccountVerification" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="58ba95c5-15db-4958-a1bf-1907c80f29c3fileName">StartAccountVerification</con:setting>
+  </con:settings>
+  <con:call id="c3fe420f-af98-4ce7-810c-04cf88025f82" name="StartAccountVerification Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:StartAccountVerification>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:PhoneNumber>?</sws:PhoneNumber>\r
+         <!--Optional:-->\r
+         <sws:Extension>?</sws:Extension>\r
+         <sws:PhoneVerificationOption>?</sws:PhoneVerificationOption>\r
+      </sws:StartAccountVerification>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/StartAccountVerification"/>
+  </con:call>
+</con:operation>

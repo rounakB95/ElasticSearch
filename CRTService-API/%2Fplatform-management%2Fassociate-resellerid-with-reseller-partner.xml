@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/associate-resellerid-with-reseller-partner" path="/platform-management/associate-resellerid-with-reseller-partner" id="5d0b6d18-0223-4d87-9424-16bb43ad9137" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5d0b6d18-0223-4d87-9424-16bb43ad9137fileName">%2Fplatform-management%2Fassociate-resellerid-with-reseller-partner</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AssociateResellerIDWithResellerPartner" id="76b95c50-117c-4320-8b5b-966a2b2c1f42" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c345d6a2-e396-47bb-9dfc-366ff8b1d4b6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

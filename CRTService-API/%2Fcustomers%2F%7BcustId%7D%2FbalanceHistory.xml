@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/balanceHistory" path="/customers/{custId}/balanceHistory" id="db3f16da-4907-4644-9b7c-ff8781a5c936" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="db3f16da-4907-4644-9b7c-ff8781a5c936fileName">%2Fcustomers%2F%7BcustId%7D%2FbalanceHistory</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetBalanceHistory" id="18562368-57ad-4f84-ab8b-ced1cc33e9f7" method="POST">
+    <con:description>Get Balance History</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "BalanceHistoryToken" : "string",
+  "TotalTransactions" : 0,
+  "TotalPages" : 0,
+  "Transactions" : [ {
+    "Date" : "2015-07-20T15:49:04-07:00",
+    "OldBalance" : 1.5,
+    "Amount" : 1.5,
+    "NewBalance" : 1.5,
+    "TransactionType" : "string"
+  } ],
+  "CurrentAccountBalance" : 1.5
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="bcc0a867-327b-4cc9-aa67-b0d9625ab860" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

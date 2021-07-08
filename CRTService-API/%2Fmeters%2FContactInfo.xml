@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/ContactInfo" path="/meters/ContactInfo" id="56423a4a-09a3-4498-ad33-983a3812800f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="56423a4a-09a3-4498-ad33-983a3812800ffileName">%2Fmeters%2FContactInfo</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetContactInfo" id="cc629c9f-c346-446b-ad7f-c5818413bcc0" method="GET">
+    <con:description>Get Contact Information</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>userId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "MailingAddress" : {
+    "Address1" : "string",
+    "Address2" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string",
+    "Country" : "string",
+    "PhoneNumber" : "string",
+    "UserEmailAddress" : "string",
+    "OrganizationEmailAddress" : "string"
+  },
+  "PhysicalMeterAddress" : {
+    "Address1" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string",
+    "ZipPlus4" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6bb8cc9d-ab49-436a-a218-04d0a0c8da19" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="SetContactInfo" id="1950610f-0816-40b3-acb2-d48ec5bfa6e4" method="POST">
+    <con:description>Set Contact Information</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="0d63284a-194d-416f-bfad-5664b1ab05a2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

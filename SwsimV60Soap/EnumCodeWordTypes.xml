@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b5c3699c-dbe4-4fd2-879f-696c68484604" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/EnumCodeWordTypes" name="EnumCodeWordTypes" bindingOperationName="EnumCodeWordTypes" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f49d1628-bcf2-425f-ae49-f8eddc9d02d8fileName">EnumCodeWordTypes</con:setting>
+    <con:setting id="b5c3699c-dbe4-4fd2-879f-696c68484604fileName">EnumCodeWordTypes</con:setting>
+  </con:settings>
+  <con:call id="f17172f6-f12a-49e0-acc4-45fc6906d744" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:EnumCodeWordTypes/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/EnumCodeWordTypes"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="aad82af6-cfb1-427e-9b00-8585389e4b9f" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/CreateManifest" name="CreateManifest" bindingOperationName="CreateManifest" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="aad82af6-cfb1-427e-9b00-8585389e4b9ffileName">CreateManifest</con:setting>
+  </con:settings>
+  <con:call id="be3cfef7-2b4e-4cd8-ac86-1ff5d5ef9924" name="CreateManifest Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:CreateManifest>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:IntegratorTxID>?</sws:IntegratorTxID>\r
+         <!--Optional:-->\r
+         <sws:StampsTxIds>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:guid>?</sws:guid>\r
+         </sws:StampsTxIds>\r
+         <!--Optional:-->\r
+         <sws:TrackingNumbers>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:string>?</sws:string>\r
+         </sws:TrackingNumbers>\r
+         <!--Optional:-->\r
+         <sws:ShipDate>?</sws:ShipDate>\r
+         <!--Optional:-->\r
+         <sws:PrintLayout>Normal</sws:PrintLayout>\r
+         <sws:FromAddress>\r
+            <!--Optional:-->\r
+            <sws:FullName>?</sws:FullName>\r
+            <!--Optional:-->\r
+            <sws:NamePrefix>?</sws:NamePrefix>\r
+            <!--Optional:-->\r
+            <sws:FirstName>?</sws:FirstName>\r
+            <!--Optional:-->\r
+            <sws:MiddleName>?</sws:MiddleName>\r
+            <!--Optional:-->\r
+            <sws:LastName>?</sws:LastName>\r
+            <!--Optional:-->\r
+            <sws:NameSuffix>?</sws:NameSuffix>\r
+            <!--Optional:-->\r
+            <sws:Title>?</sws:Title>\r
+            <!--Optional:-->\r
+            <sws:Department>?</sws:Department>\r
+            <!--Optional:-->\r
+            <sws:Company>?</sws:Company>\r
+            <!--Optional:-->\r
+            <sws:Address1>?</sws:Address1>\r
+            <!--Optional:-->\r
+            <sws:Address2>?</sws:Address2>\r
+            <!--Optional:-->\r
+            <sws:Address3>?</sws:Address3>\r
+            <!--Optional:-->\r
+            <sws:City>?</sws:City>\r
+            <!--Optional:-->\r
+            <sws:State>?</sws:State>\r
+            <!--Optional:-->\r
+            <sws:ZIPCode>?</sws:ZIPCode>\r
+            <!--Optional:-->\r
+            <sws:ZIPCodeAddOn>?</sws:ZIPCodeAddOn>\r
+            <!--Optional:-->\r
+            <sws:DPB>?</sws:DPB>\r
+            <!--Optional:-->\r
+            <sws:CheckDigit>?</sws:CheckDigit>\r
+            <!--Optional:-->\r
+            <sws:Province>?</sws:Province>\r
+            <!--Optional:-->\r
+            <sws:PostalCode>?</sws:PostalCode>\r
+            <!--Optional:-->\r
+            <sws:Country>US</sws:Country>\r
+            <!--Optional:-->\r
+            <sws:Urbanization>?</sws:Urbanization>\r
+            <!--Optional:-->\r
+            <sws:PhoneNumber>?</sws:PhoneNumber>\r
+            <!--Optional:-->\r
+            <sws:Extension>?</sws:Extension>\r
+            <!--Optional:-->\r
+            <sws:CleanseHash>?</sws:CleanseHash>\r
+            <!--Optional:-->\r
+            <sws:OverrideHash>?</sws:OverrideHash>\r
+            <!--Optional:-->\r
+            <sws:EmailAddress>?</sws:EmailAddress>\r
+            <!--Optional:-->\r
+            <sws:FullAddress>?</sws:FullAddress>\r
+         </sws:FromAddress>\r
+         <sws:ImageType>?</sws:ImageType>\r
+         <sws:PrintInstructions>?</sws:PrintInstructions>\r
+         <!--Optional:-->\r
+         <sws:ManifestType>ScanForm</sws:ManifestType>\r
+         <!--Optional:-->\r
+         <sws:NumberOfLabels>0</sws:NumberOfLabels>\r
+      </sws:CreateManifest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/CreateManifest"/>
+  </con:call>
+</con:operation>

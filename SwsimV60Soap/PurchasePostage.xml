@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="68cdb425-3675-4b2b-a68d-aed5cce7e050" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/PurchasePostage" name="PurchasePostage" bindingOperationName="PurchasePostage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4c72d47c-dafb-4003-9c9d-3d5f543d2942fileName">PurchasePostage</con:setting>
+    <con:setting id="68cdb425-3675-4b2b-a68d-aed5cce7e050fileName">PurchasePostage</con:setting>
+  </con:settings>
+  <con:call id="a0dfb941-ee18-40fd-b213-81ca89733906" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:PurchasePostage>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <sws:PurchaseAmount>?</sws:PurchaseAmount>\r
+         <sws:ControlTotal>?</sws:ControlTotal>\r
+         <!--Optional:-->\r
+         <sws:MI>\r
+            <sws:IPAddress>?</sws:IPAddress>\r
+            <!--Optional:-->\r
+            <sws:MacAddress>?</sws:MacAddress>\r
+            <!--Optional:-->\r
+            <sws:FP>\r
+               <!--Optional:-->\r
+               <sws:FP1>cid:1240212177973</sws:FP1>\r
+               <!--Optional:-->\r
+               <sws:FP2>cid:226591217675</sws:FP2>\r
+               <!--Optional:-->\r
+               <sws:FP3>cid:657814324178</sws:FP3>\r
+               <!--Optional:-->\r
+               <sws:FP4>cid:617468116124</sws:FP4>\r
+               <!--Optional:-->\r
+               <sws:FP5>cid:730646958658</sws:FP5>\r
+            </sws:FP>\r
+         </sws:MI>\r
+         <!--Optional:-->\r
+         <sws:IntegratorTxID>?</sws:IntegratorTxID>\r
+         <!--Optional:-->\r
+         <sws:SendEmail>?</sws:SendEmail>\r
+         <!--Optional:-->\r
+         <sws:Merchant>Stamps.com</sws:Merchant>\r
+      </sws:PurchasePostage>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/PurchasePostage"/>
+  </con:call>
+</con:operation>

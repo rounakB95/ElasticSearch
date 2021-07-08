@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="a28cca7e-02d3-4585-b3fc-fe8fcbb36af7" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetBalanceHistory" name="GetBalanceHistory" bindingOperationName="GetBalanceHistory" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8bd650a3-144a-478a-842a-ebdff4b3c26efileName">GetBalanceHistory</con:setting>
+    <con:setting id="a28cca7e-02d3-4585-b3fc-fe8fcbb36af7fileName">GetBalanceHistory</con:setting>
+  </con:settings>
+  <con:call id="d6735289-c05a-4f0a-8ed3-52340173ffe3" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetBalanceHistory>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:TransactionsPerPage>?</sws:TransactionsPerPage>\r
+         <sws:TransactionDateMin>?</sws:TransactionDateMin>\r
+         <!--Optional:-->\r
+         <sws:TransactionDateMax>?</sws:TransactionDateMax>\r
+         <sws:Filters>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:TransactionType>?</sws:TransactionType>\r
+         </sws:Filters>\r
+      </sws:GetBalanceHistory>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetBalanceHistory"/>
+  </con:call>
+</con:operation>

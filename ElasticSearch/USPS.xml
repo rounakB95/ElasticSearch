@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="12f3af87-c1b2-4532-a62f-cfdc80300464" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="USPS" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="12f3af87-c1b2-4532-a62f-cfdc80300464fileName">USPS</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Print" id="8786e586-03ce-4c94-86a3-4742b2276f69">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">01_usps_first_class_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-FC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_01_usps_first_class_mail</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">02_usps_first_class_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-FC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Envelope or Flat</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_02_usps_first_class_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">03_usps_first_class_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-FC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Thick Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_03_usps_first_class_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">04_usps_parcel_select </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_04_usps_parcel_select </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">05_usps_parcel_select </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_05_usps_parcel_select </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">06_usps_parcel_select </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Oversized Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_06_usps_parcel_select </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">07_usps_first_class_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-FCI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Envelope or Flat</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_07_usps_first_class_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">08_usps_first_class_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-FCI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_08_usps_first_class_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">09_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Envelope or Flat</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_09_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">10_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_10_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">11_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Thick Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_11_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">12_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_12_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">13_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_13_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Legal Flat Rate Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_14_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">15_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_15_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">16_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Small Flat Rate Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_16_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">17_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_17_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">18_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Flat Rate Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_18_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">19_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Padded Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_19_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">20_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Regional Rate Box A</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_20_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">21_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Regional Rate Box B</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_21_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">22_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Envelope or Flat</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_22_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">23_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_23_usps_priority_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">24_usps_media_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-MM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_24_usps_media_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">25_usps_media_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-MM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Thick Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_25_usps_media_mail </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">26_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-XM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_26_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">27_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-XM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_27_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">28_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-XM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Thick Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_28_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">29_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-XM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_29_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">30_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-XM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Legal Flat Rate Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_30_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">31_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-XM</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Padded Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">14203</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>123 MAIN ST</sws:Address1>             <sws:City>BUFFALO</sws:City>             <sws:State>NY</sws:State>             <sws:ZIPCode>14203</sws:ZIPCode>             <sws:ZIPCodeAddOn>3042</sws:ZIPCodeAddOn>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_31_usps_priority_mail_express </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">32_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Small Flat Rate Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_32_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">33_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Large Flat Rate Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_33_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">34_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Legal Flat Rate Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_34_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">35_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Padded Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_35_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">36_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-PMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Box</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_36_usps_priority_mail_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">37_usps_priority_mail_express_international</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-EMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Package</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_37_usps_priority_mail_express_international</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">38_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-EMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Thick Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_38_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">39_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-EMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Legal Flat Rate Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_39_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">40_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-EMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_40_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">USPS</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">41_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">US-EMI</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Flat Rate Padded Envelope</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">A1C 2V5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"><![CDATA[<sws:Address1>8 Merrymeeting Rd</sws:Address1>             <sws:Address2/>             <sws:City>St John's</sws:City>             <sws:State>NL</sws:State>             <sws:PostalCode>A1C 2V5</sws:PostalCode>             <sws:Country>CA</sws:Country>]]]]>><![CDATA[</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">High</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">PPTS-1026_ES_ElasticSearch_41_usps_priority_mail_express_international </con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>Carrier</con:property>
+      <con:property>TestCaseName</con:property>
+      <con:property>Service Type</con:property>
+      <con:property>Package Type</con:property>
+      <con:property>ToZip</con:property>
+      <con:property>ToAddress</con:property>
+      <con:property>Priority</con:property>
+      <con:property>AutomationKey</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="e981dc67-7c10-4ee3-9517-66c577c387dc" name="Create Indicium">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV111Soap</con:interface>
+      <con:operation>CreateIndicium</con:operation>
+      <con:request name="Create Indicium" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="10a8cc89-181f-4e58-afbe-a1ae226e9193">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SoapAction" value="${#Project#Namespace}/CreateIndicium" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:CreateIndicium>
+         <sws:Credentials>
+            <sws:IntegrationID>C27D7CDC-076E-4D62-98AA-AE45BF9B4B96</sws:IntegrationID>
+            <sws:Username>rband459668</sws:Username>
+            <sws:Password>pass1$</sws:Password>
+         </sws:Credentials>
+         <sws:IntegratorTxID>${=java.util.UUID.randomUUID()}</sws:IntegratorTxID>
+         <sws:Rate>
+            <sws:From>
+               <sws:FullName>Rounak Bandyopadhyay</sws:FullName>
+               <sws:Address1>4444 WESTHEIMER RD #313D</sws:Address1>
+               <sws:City>HOUSTON</sws:City>
+               <sws:State>TX</sws:State>
+               <sws:ZIPCode>77027</sws:ZIPCode>
+               <sws:PhoneNumber>6509876543</sws:PhoneNumber>
+               <sws:EmailAddress>rbandyopadhyay@stamps.com</sws:EmailAddress>
+            </sws:From>
+            <sws:To>
+               <sws:FullName>BEN REILLY</sws:FullName>
+               <sws:Company>LARGE ENVELOPE OR FLAT</sws:Company>
+               ${Print#ToAddress}
+               <sws:PhoneNumber>8884340055</sws:PhoneNumber>
+            </sws:To>
+            <sws:ServiceType>${Print#Service Type}</sws:ServiceType>
+            <sws:PrintLayout>Normal4X6</sws:PrintLayout>
+            <sws:WeightOz>1</sws:WeightOz>
+            <sws:PackageType>${Print#Package Type}</sws:PackageType>
+            <sws:Length>0.5</sws:Length>
+            <sws:Width>0.5</sws:Width>
+            <sws:Height>0.5</sws:Height>
+            <sws:ShipDate>${#Project#ShipDate}</sws:ShipDate>
+            <sws:DeclaredValue>50</sws:DeclaredValue>
+         </sws:Rate>
+         <sws:Customs>
+            <sws:ContentType>Merchandise</sws:ContentType>
+            <sws:LicenseNumber>License 123</sws:LicenseNumber>
+            <sws:CertificateNumber>Cert No. 345</sws:CertificateNumber>
+            <sws:InvoiceNumber>Invoice 678</sws:InvoiceNumber>
+            <sws:CustomsLines>
+               <sws:CustomsLine>
+                  <sws:Description>Merchandise</sws:Description>
+                  <sws:Quantity>1</sws:Quantity>
+                  <sws:Value>3.99</sws:Value>
+                  <sws:WeightOz>1</sws:WeightOz>
+                  <sws:HSTariffNumber>123456</sws:HSTariffNumber>
+                  <sws:CountryOfOrigin>US</sws:CountryOfOrigin>
+               </sws:CustomsLine>
+            </sws:CustomsLines>
+            <sws:SendersCustomsReference>Senders</sws:SendersCustomsReference>
+         </sws:Customs>
+         <sws:ImageType>Pdf</sws:ImageType>
+         <sws:nonDeliveryOption>Abandon</sws:nonDeliveryOption>
+         <!--<sws:GroupCode>${Services#GroupCode}</sws:GroupCode>
+         <sws:Description>${Services#Description}</sws:Description>-->
+      </sws:CreateIndicium>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="db998173-38e9-4d63-a324-da27124767db" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="75566402-056c-48b8-a370-753973b72a74" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/CreateIndicium"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="3d393858-f238-4bf4-9099-e8b7dd60c6e3" name="Account Info">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV111Soap</con:interface>
+      <con:operation>GetAccountInfo</con:operation>
+      <con:request name="Account Info" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="85a5f0dd-c607-4978-8d43-db1b2622f28e">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SoapAction" value="${#Project#Namespace}/GetAccountInfo" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:GetAccountInfo>
+         <sws:Credentials>
+              <sws:IntegrationID>C27D7CDC-076E-4D62-98AA-AE45BF9B4B96</sws:IntegrationID>
+            <sws:Username>rband459668</sws:Username>
+            <sws:Password>pass1$</sws:Password>
+         </sws:Credentials>
+      </sws:GetAccountInfo>
+   <sws1:GetAccountInfo xmlns:sws1="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111"/></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="cb9f4326-8a15-46ad-b5ca-62708b3fe0a2" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="badd569f-a798-479a-98d2-2a3400872309" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetAccountInfo"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink1" id="51be870d-55fb-4b94-9f1d-83c133e4f55f">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>PackageType</con:name>
+          <con:value>${Print#Package Type}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>serviceType</con:name>
+          <con:value>${Print#Service Type}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>TrackingNumber</con:name>
+          <con:value>${Create Indicium#Response#declare namespace ns1='http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111'; //ns1:CreateIndiciumResponse[1]/ns1:TrackingNumber[1]}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="10000" id="af74cebc-eb12-4860-8179-3bb2c6d99742">
+    <con:settings/>
+    <con:config>
+      <delay>1000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Check Database" id="340cb17f-daea-4179-9b84-e4c9bad6916f">
+    <con:settings/>
+    <con:config>
+      <script>import groovy.sql.Sql;
+
+// For this Groovy you need to grab the TrackingNumber from &lt;CreateIndicium>
+def trackingNumber = context.expand( '${DataSink1#TrackingNumber}' )
+ 
+// Then log TrackingNumber
+log.info("TrackingNumber:"+trackingNumber)
+
+// Build and log ConnectionString
+def pOSTALDBServer = context.expand( '${#Project#POSTALDBServer}' )
+def connectionString = "jdbc:sqlserver://"+pOSTALDBServer+":1433;databaseName=Postal;user=qalab;password=StampsQA!"
+
+def commandTest = "SELECT  * FROM [Postal].[dbo].[sdct_Postal_UniversalPrintLog] where ConfirmationNumber = '"+trackingNumber+"'"
+def results =  GetValueFromDb(connectionString,commandTest)
+
+//get all the data points need to be verified
+def UniversalPostageID = 	results[0].UniversalPostageID
+testRunner.testCase.setPropertyValue("UniversalPostageID", UniversalPostageID.toString())
+
+def StampsTxID = results[0].StampsTxID
+testRunner.testCase.setPropertyValue("StampsTxID", StampsTxID)
+
+def ConfirmationNumber = results[0].ConfirmationNumber
+testRunner.testCase.setPropertyValue("ConfirmationNumber", ConfirmationNumber)
+
+def CustId = results[0].CustId
+testRunner.testCase.setPropertyValue("CustId", CustId.toString())
+
+def IntegratorTxID = results[0].IntegratorTxID
+testRunner.testCase.setPropertyValue("IntegratorTxID", IntegratorTxID)
+
+
+
+
+// Now log each of these values in the DataSink
+log.info("UniversalPostageID:"+UniversalPostageID)
+log.info("StampsTxID:"+StampsTxID)
+log.info("ConfirmationNumber:"+ConfirmationNumber)
+
+
+testRunner.testCase.setPropertyValue("UniversalPostageID", UniversalPostageID.toString())
+testRunner.testCase.setPropertyValue("StampsTxID",StampsTxID.toString())
+testRunner.testCase.setPropertyValue("ConfirmationNumber",ConfirmationNumber.toString())
+
+
+////////// METHOD //////////////
+def ArrayList GetValueFromDb(String ConnectionString, String CommandTest){
+	//ArrayList tmpValues = []; 
+	def sql = Sql.newInstance(ConnectionString, "com.microsoft.sqlserver.jdbc.SQLServerDriver")
+	def results = sql.rows(CommandTest)
+	
+	return results;
+}</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DB Data Sink" id="9d15d276-1915-46a4-a769-e4bb36a10d00">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>UniversalPostageID</con:name>
+          <con:value>${#TestCase#UniversalPostageID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>StampsTxID</con:name>
+          <con:value>${#TestCase#StampsTxID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>ConfirmationNumber</con:name>
+          <con:value>${#TestCase#ConfirmationNumber}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>CustId</con:name>
+          <con:value>${#TestCase#CustId}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>IntegratorTxID</con:name>
+          <con:value>${#TestCase#IntegratorTxID}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="Elastic Search" id="75790b87-5b4d-4d22-b1ea-197175ecbc31">
+    <con:settings/>
+    <con:config method="POST" xsi:type="con:HttpRequest" id="10ca0323-22f6-45f9-babc-9da32b5b3993" name="Elastic Search" downloadIncludedResources="false" postQueryString="false" mediaType="application/json" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://vpc-qa007-printhistory-index-t2vuxykqylxrjgqulhezacs2re.us-west-1.es.amazonaws.com/printlog-07-2021/_search?</con:endpoint>
+      <con:request>{
+    "query": {
+                "match" : {  "_id" : "${#TestCase#UniversalPostageID}"}
+            }
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="ELastic Search verification" id="7fbb0494-edc9-4298-bb80-37bcb28af21c">
+    <con:settings/>
+    <con:config>
+      <script>// can only be done once we get the end point up and running.
+def hits = context.expand( '${Elastic Search#Response#$[\'hits\'][\'total\'][\'value\']}' )
+def tracking_number = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'tracking_number\']}' )
+def Cust_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'cust_id\']}' )
+def Universal_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'universal_id\']}' )
+def carrier = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'carrier\']}' )
+//def username = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'username\']}' )
+def tx_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'label_id\']}' )
+
+
+
+//values from db
+def universalPostageID = context.expand( '${#TestCase#UniversalPostageID}' )
+def stampsTxID = context.expand( '${#TestCase#StampsTxID}' )
+def confirmationNumber = context.expand( '${#TestCase#ConfirmationNumber}' )
+def custId = context.expand( '${#TestCase#CustId}' )
+def integratorTxID = context.expand( '${#TestCase#IntegratorTxID}' )
+//def requestUsername = context.expand( '${Create Indicium#Request#declare namespace sws=\'${#Project#Namespace}\'; //sws:CreateIndicium[1]/sws:Credentials[1]/sws:Username[1]}' )
+int count = 0;
+if(hits == "1"){
+	if(carrier == 'usps')
+		count++;
+	if(tracking_number == confirmationNumber)
+		count++;
+	if(Cust_id == custId)
+		count++;
+	if(Universal_id == universalPostageID)
+		count++;
+	if(tx_id == stampsTxID.toLowerCase())
+		count++;
+	log.info(tracking_number)
+	log.info(confirmationNumber)
+//Test Result
+	if(count == 5){
+		testRunner.testCase.setPropertyValue("Test Result", "Pass")	
+	}else{
+		testRunner.testCase.setPropertyValue("Test Result", "Fail")
+	}
+}else{
+	log.info("Number of hits is greater than 1:"+hits)
+}</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Results" id="86f109c3-26c7-4dd4-a005-c7c06b473eeb">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>TestCaseName</con:name>
+          <con:value>${Print#TestCaseName}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Result</con:name>
+          <con:value>${#TestCase#Test Result}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="e3c864f6-876f-4e2e-bc20-d033cce34227">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Print</dataSourceStep>
+      <targetStep>Create Indicium</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>UniversalPostageID</con:name>
+      <con:value>6276271100</con:value>
+    </con:property>
+    <con:property>
+      <con:name>StampsTxID</con:name>
+      <con:value>F37DC30B-7AC8-4D30-8BBB-AC97968FB38A</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConfirmationNumber</con:name>
+      <con:value>00040899563514808322</con:value>
+    </con:property>
+    <con:property>
+      <con:name>CustId</con:name>
+      <con:value>7465149</con:value>
+    </con:property>
+    <con:property>
+      <con:name>IntegratorTxID</con:name>
+      <con:value>0f8e0605-7a4d-4e27-9b79-a3ebca2ff639</con:value>
+    </con:property>
+    <con:property>
+      <con:name>Test Result</con:name>
+      <con:value>Fail</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>75790b87-5b4d-4d22-b1ea-197175ecbc31</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>7fbb0494-edc9-4298-bb80-37bcb28af21c</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>af74cebc-eb12-4860-8179-3bb2c6d99742</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

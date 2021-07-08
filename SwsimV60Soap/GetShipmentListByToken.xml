@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="60af1da3-e8c3-4bc0-a15a-ebf87101932f" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetShipmentListByToken" name="GetShipmentListByToken" bindingOperationName="GetShipmentListByToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cbfc223c-0731-44e6-8ec0-8fd2fd668da0fileName">GetShipmentListByToken</con:setting>
+    <con:setting id="60af1da3-e8c3-4bc0-a15a-ebf87101932ffileName">GetShipmentListByToken</con:setting>
+  </con:settings>
+  <con:call id="7cee79f0-fd38-4ae2-85fe-2691b0521f0a" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetShipmentListByToken>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:ShipmentListToken>?</sws:ShipmentListToken>\r
+         <sws:PageNumber>?</sws:PageNumber>\r
+      </sws:GetShipmentListByToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetShipmentListByToken"/>
+  </con:call>
+</con:operation>

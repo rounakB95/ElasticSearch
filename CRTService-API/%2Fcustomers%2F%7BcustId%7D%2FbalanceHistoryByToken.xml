@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/{custId}/balanceHistoryByToken" path="/customers/{custId}/balanceHistoryByToken" id="07380976-b2b2-4391-bb48-a9eb008f7979" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="07380976-b2b2-4391-bb48-a9eb008f7979fileName">%2Fcustomers%2F%7BcustId%7D%2FbalanceHistoryByToken</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetBalanceHistoryByToken" id="e30f6c17-8e8e-4354-bcce-95a857a16ec8" method="POST">
+    <con:description>Get Balance History By Token</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "BalanceHistoryToken" : "string",
+  "TotalTransactions" : 0,
+  "TotalPages" : 0,
+  "Transactions" : [ {
+    "Date" : "2015-07-20T15:49:04-07:00",
+    "OldBalance" : 1.5,
+    "Amount" : 1.5,
+    "NewBalance" : 1.5,
+    "TransactionType" : "string"
+  } ],
+  "CurrentAccountBalance" : 1.5
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c6e32845-0814-46db-842b-195f47cd9ffa" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/reseller-partners" path="/platform-management/reseller-partners" id="37e958b8-1569-4935-8b06-ecda7e152baa" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="37e958b8-1569-4935-8b06-ecda7e152baafileName">%2Fplatform-management%2Freseller-partners</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetResellerPartners" id="1a220651-9dab-494a-975b-5063b8a28d93" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "reseller_partner_id" : 0,
+  "description" : "string",
+  "contact_name" : "string",
+  "address_1" : "string",
+  "address_2" : "string",
+  "city" : "string",
+  "state" : "string",
+  "postal_code" : "string",
+  "email_address" : "string",
+  "phone" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="ca8fa9ea-698a-4f64-8be5-54357cb60d78" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

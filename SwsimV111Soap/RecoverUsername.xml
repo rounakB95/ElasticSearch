@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="157cfaef-0ef0-48d1-b6be-1c8d483fa2a3" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/RecoverUsername" name="RecoverUsername" bindingOperationName="RecoverUsername" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="157cfaef-0ef0-48d1-b6be-1c8d483fa2a3fileName">RecoverUsername</con:setting>
+  </con:settings>
+  <con:call id="bb1e1ea6-c3d8-472f-8d74-8b0e5ec9b9f8" name="RecoverUsername Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:RecoverUsername>\r
+         <sws:EmailAddress>?</sws:EmailAddress>\r
+         <!--Optional:-->\r
+         <sws:Reserved>?</sws:Reserved>\r
+      </sws:RecoverUsername>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/RecoverUsername"/>
+  </con:call>
+</con:operation>

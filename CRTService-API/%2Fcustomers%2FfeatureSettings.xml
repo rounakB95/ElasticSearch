@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/featureSettings" path="/customers/featureSettings" id="7fcc7a83-8dd9-495b-afec-01a6706837bb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7fcc7a83-8dd9-495b-afec-01a6706837bbfileName">%2Fcustomers%2FfeatureSettings</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetFeatureSettings" id="e746f48e-0afa-4094-80e2-b366351b4f5b" method="GET">
+    <con:description>Get features for the customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "AppCapInfo" : {
+    "AppCap1On" : 0,
+    "AppCap1Off" : 0,
+    "AppCap2On" : 0,
+    "AppCap2Off" : 0,
+    "AppCap3On" : 0,
+    "AppCap3Off" : 0,
+    "AppCap4On" : 0,
+    "AppCap4Off" : 0,
+    "AppCap5On" : 0,
+    "AppCap5Off" : 0
+  },
+  "FciLefNonDocFee" : 1.5,
+  "DdpFee" : 1.5,
+  "FcPayOnUseReturnLabelFee" : 1.5,
+  "PmPayOnUseReturnLabelFee" : 1.5,
+  "GlobalAdvantagePickupCarrierId" : 0,
+  "OutstandingLabelBalanceLimit" : 1.5,
+  "UspsPercentage" : 1.5,
+  "DhlPercentage" : 1.5,
+  "FedExPercentage" : 1.5,
+  "WeightDifferenceInOuncesToIgnoreForAdjustment" : 1.5,
+  "ParcelGuardMaximumInsuredValue" : 1.5,
+  "MaximumDateAdvanceforShippingLabels" : 0,
+  "UseActualRateIngredientsForAdjustment" : true,
+  "DhlExpressAccountNumber" : "string",
+  "HasOptedOutOfAutomatedEvents" : true,
+  "CanadaPostOuboundMarkUpPercentage" : 1.5,
+  "CanadaPostReturnMarkUpPercentage" : 1.5,
+  "ParcelGuardIncludedInsurances" : [ {
+    "ServiceId" : 0,
+    "Amount" : 1.5
+  } ],
+  "PsPayOnUseReturnLabelFee" : 1.5,
+  "PayOnUseReturnChargeType" : 0,
+  "PayOnUseReturnPerLabelFee" : 1.5
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6384654e-5635-4abc-9f8b-0c954878ad95" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="SetFeatureSettings" id="66735561-5fa4-45b9-b661-d62ef6aa5aa4" method="POST">
+    <con:description>Set features for the customer</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="4f212821-5e42-4d13-b71f-7eec04adbbba" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

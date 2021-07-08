@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/orders/searchOrderId" path="/orders/searchOrderId" id="708979ce-7450-428a-b7ae-e115f79e010d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="708979ce-7450-428a-b7ae-e115f79e010dfileName">%2Forders%2FsearchOrderId</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SearchOrderId" id="f48a57dc-5faa-48f2-b064-802ee8b0cee3" method="GET">
+    <con:description>Search account and its orders by OrderId</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "UserInfo" : {
+    "UserName" : "string",
+    "CustId" : 0,
+    "UserId" : 0,
+    "ProfileId" : "string",
+    "MeterNo" : 1.5,
+    "CompanyName" : "string",
+    "UserFullName" : {
+      "FirstName" : "string",
+      "Middlename" : "string",
+      "LastName" : "string"
+    }
+  },
+  "OrderInfo" : {
+    "OrderId" : "string",
+    "OrderStatus" : "string",
+    "ProductTotal" : "string",
+    "ShippingTotal" : "string",
+    "TaxTotal" : "string",
+    "OrderTotal" : "string",
+    "OrderDate" : "string",
+    "ReorderStatus" : "string",
+    "PreviouslyAppliedCredit" : 1.5,
+    "MaxRefundAllowed" : 1.5,
+    "Refundability" : 0
+  },
+  "PaymentInfo" : {
+    "PaymentGroupId" : "string",
+    "PaymentMethod" : "string",
+    "State" : "string",
+    "AmountCredited" : "string",
+    "AmountDebited" : "string",
+    "BillToAddress" : {
+      "Name" : {
+        "FirstName" : "string",
+        "Middlename" : "string",
+        "LastName" : "string"
+      },
+      "Address" : {
+        "Street" : "string",
+        "City" : "string",
+        "State" : "string",
+        "Zip" : "string"
+      }
+    }
+  },
+  "ShippingInfo" : [ {
+    "ShippingGroupId" : "string",
+    "ShippingTrackingNumber" : "string",
+    "ShippingStatus" : "string",
+    "ShippingMethod" : "string",
+    "ShippingDate" : "string",
+    "InternalQaRequestId" : "string",
+    "DateSubmittedToQa" : "string",
+    "LineItems" : [ {
+      "LineId" : "string",
+      "SkuId" : "string",
+      "ProductId" : "string",
+      "Quantity" : "string",
+      "ProductTotal" : "string",
+      "TaxTotal" : "string",
+      "Description" : "string"
+    } ],
+    "ShipToAddress" : [ {
+      "Name" : {
+        "FirstName" : "string",
+        "Middlename" : "string",
+        "LastName" : "string"
+      },
+      "Address" : {
+        "Street" : "string",
+        "City" : "string",
+        "State" : "string",
+        "Zip" : "string"
+      }
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="8a02ff22-3241-4f68-99a9-e8c4e35797ca" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

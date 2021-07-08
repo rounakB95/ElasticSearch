@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/labelFeeRateSets" path="/customers/labelFeeRateSets" id="f075f4f8-4005-4dc2-a984-66a26351719b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f075f4f8-4005-4dc2-a984-66a26351719bfileName">%2Fcustomers%2FlabelFeeRateSets</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetLabelFeeRateSets" id="3270e7f2-e107-42a5-80cd-d867295f599b" method="GET">
+    <con:description>Get Label Fee Rate Sets</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Items" : [ {
+    "LabelFeeRateID" : 0,
+    "UsesDynamicTiers" : true,
+    "LabelRatePostageTypeID" : 0,
+    "MinFeeAmount" : 1.5,
+    "Ranges" : [ {
+      "RangeStart" : 0,
+      "RangeEnd" : 0,
+      "RangeAmount" : 1.5
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="542fc9c1-4a1a-4864-a0e2-e9083f8ff7f0" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/ibmKiosks/getKioskDetails" path="/ibmKiosks/getKioskDetails" id="855b4dc6-6784-4276-989a-55eb88806f89" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="855b4dc6-6784-4276-989a-55eb88806f89fileName">%2FibmKiosks%2FgetKioskDetails</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetKioskDetails" id="68ec1df5-8d40-4131-9584-7ded1d05fcdd" method="GET">
+    <con:description>Get Kiosk Details</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>idOrName</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Id" : 0,
+  "Name" : "string",
+  "Status" : 0,
+  "Addresses" : {
+    "ContactFirstName" : "string",
+    "ContactLastName" : "string",
+    "ContactAddress1" : "string",
+    "ContactCity" : "string",
+    "ContactState" : "string",
+    "ContactZipCode" : "string",
+    "ContactZipAddOn" : "string",
+    "ContactPhone" : "string",
+    "ContactEmail" : "string",
+    "SiteName" : "string",
+    "SiteAddress" : "string",
+    "SiteCity" : "string",
+    "SiteState" : "string",
+    "SiteZipCode" : "string",
+    "SiteZipAddOn" : "string"
+  },
+  "AvailablePostage" : 1.5,
+  "ControlTotal" : 1.5,
+  "MeterMaxLimit" : 1.5,
+  "IsErrorReturned" : true,
+  "ErrorDescription" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="eabbb202-64f1-489f-bdd4-9bb9bf43f39b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

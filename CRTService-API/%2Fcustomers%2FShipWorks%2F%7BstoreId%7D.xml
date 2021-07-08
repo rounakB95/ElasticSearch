@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/ShipWorks/{storeId}" path="/customers/ShipWorks/{storeId}" id="ad79896b-d8ad-43c9-be66-65cf10f025b7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ad79896b-d8ad-43c9-be66-65cf10f025b7fileName">%2Fcustomers%2FShipWorks%2F%7BstoreId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>storeId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetShipWorksInfo" id="26a45966-5e26-4ea3-b92c-e6626c7b7f42" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CustId" : 0,
+  "AssociatedCustId" : 0,
+  "RecurlyAccountCode" : "string",
+  "ContactInfo" : {
+    "FirstName" : "string",
+    "LastName" : "string",
+    "Company" : "string",
+    "Phone" : "string",
+    "Email" : "string",
+    "Address1" : "string",
+    "Address2" : "string",
+    "City" : "string",
+    "Zip" : "string",
+    "State" : "string",
+    "Country" : "string"
+  },
+  "RecurlyStatusInfo" : {
+    "BillingStartDate" : "2015-07-20T15:49:04-07:00",
+    "BillingEndDate" : "2015-07-20T15:49:04-07:00",
+    "TrialEndDate" : "2015-07-20T15:49:04-07:00",
+    "CustomerStatus" : "Legacy",
+    "Reason" : "string",
+    "DateChanged" : "2015-07-20T15:49:04-07:00",
+    "Username" : "string",
+    "HostedLoginToken" : "string"
+  },
+  "CloseAccountReasons" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ],
+  "CancelReactivateSubscriptionReasons" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ],
+  "BillingPlans" : {
+    "PlanId" : 0,
+    "RecurlyAddOnCodes" : [ "string" ],
+    "PendingPlanId" : 0,
+    "PendingRecurlyAddOnCodes" : [ "string" ],
+    "BillingPlans" : {
+      "Id" : 0,
+      "Name" : "string",
+      "RecurlyAddOnCodes" : [ {
+        "Id" : 0,
+        "Description" : "string"
+      } ]
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="82179bb1-1ed0-41c4-a2b3-dac304401e9b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

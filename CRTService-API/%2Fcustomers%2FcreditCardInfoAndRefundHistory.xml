@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/creditCardInfoAndRefundHistory" path="/customers/creditCardInfoAndRefundHistory" id="48ecd103-2c67-4ff6-8e21-88778008ee90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="48ecd103-2c67-4ff6-8e21-88778008ee90fileName">%2Fcustomers%2FcreditCardInfoAndRefundHistory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCreditCardRefund" id="10aeb15a-1b67-4253-bc86-ac5581d4e34b" method="GET">
+    <con:description>Get info about credit card refund for the customer</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custID</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>profileId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>maxInstantCreditSummary</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>userId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "PurchaseSummary" : [ {
+    "PurchaseName" : "string",
+    "PaymentTypeName" : "string",
+    "OrderCount" : 0,
+    "AmmountTotalCents" : 0,
+    "TaxTotalCents" : 0,
+    "ShippingTotalCents" : 0,
+    "GrandTotalCents" : 0
+  } ],
+  "InstantCreditSummary" : [ {
+    "TransactionType" : "string",
+    "CreationDate" : "string",
+    "Amount" : 1.5,
+    "OrderStatusName" : "string",
+    "ReasonCode" : 0,
+    "Comments" : "string",
+    "CSRName" : "string"
+  } ],
+  "ContainsPaymentInfo" : true,
+  "CreditCardPaymentInfo" : {
+    "AccounType" : "string",
+    "ExpiryDate" : "string",
+    "AccountLast4" : "string",
+    "Holder" : "string",
+    "Street" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string"
+  },
+  "InstantCreditReasons" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="423fbf99-bca7-4d8e-91f2-de4a41dd65f8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

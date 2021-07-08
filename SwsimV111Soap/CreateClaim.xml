@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2f2af9ff-b09a-424c-ac23-52ba167aee19" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/CreateClaim" name="CreateClaim" bindingOperationName="CreateClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2f2af9ff-b09a-424c-ac23-52ba167aee19fileName">CreateClaim</con:setting>
+  </con:settings>
+  <con:call id="e8bba6e6-dd8a-49cd-89d2-fda63fc84e3b" name="CreateClaim Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:CreateClaim>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:StampsTxID>?</sws:StampsTxID>\r
+         <sws:ClaimType>?</sws:ClaimType>\r
+         <sws:ItemDescription>?</sws:ItemDescription>\r
+         <!--Optional:-->\r
+         <sws:recipientPhoneNumber>?</sws:recipientPhoneNumber>\r
+         <!--Optional:-->\r
+         <sws:RecipientEmail>?</sws:RecipientEmail>\r
+         <sws:RequestedClaimAmount>?</sws:RequestedClaimAmount>\r
+         <!--Optional:-->\r
+         <sws:ProofOfValueURL>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:string>?</sws:string>\r
+         </sws:ProofOfValueURL>\r
+         <!--Optional:-->\r
+         <sws:OrderValue>0.0</sws:OrderValue>\r
+         <!--Optional:-->\r
+         <sws:EndUserRefund>0.0</sws:EndUserRefund>\r
+         <!--Optional:-->\r
+         <sws:ProofOfDamageURL>\r
+            <!--Zero or more repetitions:-->\r
+            <sws:string>?</sws:string>\r
+         </sws:ProofOfDamageURL>\r
+         <!--Optional:-->\r
+         <sws:claimContactName>?</sws:claimContactName>\r
+         <!--Optional:-->\r
+         <sws:claimContactEmail>?</sws:claimContactEmail>\r
+         <!--Optional:-->\r
+         <sws:claimContactPhoneNumber>?</sws:claimContactPhoneNumber>\r
+         <!--Optional:-->\r
+         <sws:claimAddress>?</sws:claimAddress>\r
+         <!--Optional:-->\r
+         <sws:claimCity>?</sws:claimCity>\r
+         <!--Optional:-->\r
+         <sws:claimState>?</sws:claimState>\r
+         <!--Optional:-->\r
+         <sws:claimCountry>?</sws:claimCountry>\r
+         <!--Optional:-->\r
+         <sws:claimZIP>?</sws:claimZIP>\r
+         <!--Optional:-->\r
+         <sws:claimPaymentPreference>AccountBalance</sws:claimPaymentPreference>\r
+      </sws:CreateClaim>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/CreateClaim"/>
+  </con:call>
+</con:operation>

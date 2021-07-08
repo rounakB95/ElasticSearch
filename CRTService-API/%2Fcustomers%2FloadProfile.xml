@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/loadProfile" path="/customers/loadProfile" id="f72cc9e5-f8ab-4162-9490-2293fecc3dee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f72cc9e5-f8ab-4162-9490-2293fecc3deefileName">%2Fcustomers%2FloadProfile</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="LoadProfile" id="5aa7e3d7-a5f3-4dd6-b144-3dc88aebf5ff" method="GET">
+    <con:description>Load customer profile</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custID</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>userID</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "UserName" : "string",
+  "CompanyName" : "string",
+  "UserFullName" : {
+    "FirstName" : "string",
+    "Middlename" : "string",
+    "LastName" : "string"
+  },
+  "Merchant" : "string",
+  "MeterProvider" : "string",
+  "AccountType" : 0,
+  "RateSetType" : -1,
+  "Platform" : 0,
+  "ResellerAccountId" : 0,
+  "IsSasDmc" : true,
+  "IsBackendMeter" : true,
+  "CorpId" : 0,
+  "ProfileId" : "string",
+  "TermsVersion" : 0,
+  "TermsDescription" : "string",
+  "UserRole" : "string",
+  "CurrentNoOfUsers" : 0,
+  "HasUspsRep" : true,
+  "SingleSignOnEnabled" : true,
+  "ShipWorkLink" : "string",
+  "OmasAccountId" : "string",
+  "EpsAccount" : "string",
+  "GppUsername" : "string",
+  "AccountStatus" : 0,
+  "StatusReason" : 0,
+  "UserStatus" : 0,
+  "ResubmissionRequired" : true,
+  "LicenseStatus" : 0,
+  "DateOpened" : "string",
+  "DateClosed" : "string",
+  "TrialEndDate" : "string",
+  "LastPrintDate" : "string",
+  "CustFullName" : {
+    "FirstName" : "string",
+    "Middlename" : "string",
+    "LastName" : "string"
+  },
+  "MailingAddress" : {
+    "Street" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string"
+  },
+  "PhysicalAddress" : {
+    "Street" : "string",
+    "City" : "string",
+    "State" : "string",
+    "Zip" : "string"
+  },
+  "UserEmailAddress" : "string",
+  "CompanyEmailAddress" : "string",
+  "PhoneNumber" : "string",
+  "StoreBillingInfo" : {
+    "PaymentType" : 0,
+    "DefaultPayment" : "string",
+    "BillingName" : "string",
+    "BillingAddress" : {
+      "Street" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string"
+    }
+  },
+  "ServiceBillingInfo" : {
+    "PaymentType" : 0,
+    "DefaultPayment" : "string",
+    "BillingName" : "string",
+    "BillingAddress" : {
+      "Street" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string"
+    }
+  },
+  "PostageBillingInfo" : {
+    "PaymentType" : 0,
+    "DefaultPayment" : "string",
+    "BillingName" : "string",
+    "BillingAddress" : {
+      "Street" : "string",
+      "City" : "string",
+      "State" : "string",
+      "Zip" : "string"
+    }
+  },
+  "PostageDefaultedAsServiceBilling" : true,
+  "CurrentPricingPlan" : {
+    "Sku" : 1.5,
+    "Name" : "string",
+    "MonthlyFee" : 1.5,
+    "AnnualFee" : 1.5
+  },
+  "MultiUserPlan" : true,
+  "PendingPricingPlan" : {
+    "Sku" : 1.5,
+    "Name" : "string",
+    "MonthlyFee" : 1.5,
+    "AnnualFee" : 1.5
+  },
+  "NextStatementDate" : "string",
+  "IsLabelFeeRateEnabled" : true,
+  "IsZeroPostageBalanceEnabled" : true,
+  "PromoCode" : "string",
+  "OfferName" : "string",
+  "OfferDescription" : "string",
+  "RegistrationCookie" : "string",
+  "DuplicatePromoCheck" : 0,
+  "CurrentBalance" : 1.5,
+  "TotalLabelsPrinted" : 0,
+  "PurchasedAndCredited" : 1.5,
+  "TotalPostagePurchased" : 1.5,
+  "InitialFreePostage" : 1.5,
+  "Comment" : "string",
+  "ActiveUsers" : [ {
+    "UserId" : 0,
+    "UserName" : "string",
+    "UserRoles" : "string",
+    "PerPrintLimit" : 1.5,
+    "PurchasePostageEnabled" : true,
+    "FedExEnabled" : true,
+    "StoreEnabled" : true,
+    "CostCodeRequired" : true
+  } ],
+  "InactiveUsers" : [ {
+    "UserId" : 0,
+    "UserName" : "string",
+    "UserRoles" : "string",
+    "PerPrintLimit" : 1.5,
+    "PurchasePostageEnabled" : true,
+    "FedExEnabled" : true,
+    "StoreEnabled" : true,
+    "CostCodeRequired" : true
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="933c7580-c94d-4720-ac82-1bea284385f7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

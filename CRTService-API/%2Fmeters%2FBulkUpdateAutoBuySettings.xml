@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/BulkUpdateAutoBuySettings" path="/meters/BulkUpdateAutoBuySettings" id="bfae753a-f26d-444b-9ade-2deff9bb23f1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bfae753a-f26d-444b-9ade-2deff9bb23f1fileName">%2Fmeters%2FBulkUpdateAutoBuySettings</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BulkUpdateAutoBuySettings" id="01384d73-e6d1-478d-9577-7185e43fc6cc" method="POST">
+    <con:description>Update Autobuy Settings(Bulk Actions)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2279c452-4f03-44b8-8103-7e643185afa6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

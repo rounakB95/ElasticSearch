@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/dynamicpayment/DynamicPaymentFields" path="/dynamicpayment/DynamicPaymentFields" id="fad6bfa5-7447-4233-961d-5b1e178921a4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fad6bfa5-7447-4233-961d-5b1e178921a4fileName">%2Fdynamicpayment%2FDynamicPaymentFields</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetDynamicPaymentFields" id="f310ff85-4982-4632-a866-92795d721c06" method="GET">
+    <con:description>Get Dynamic PaymentFields</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "CustID" : 0,
+  "PaymentField1" : "string",
+  "PaymentField2" : "string",
+  "PaymentField3" : "string",
+  "PaymentField4" : "string",
+  "PaymentField5" : "string",
+  "PaymentField6" : "string",
+  "PaymentField7" : "string",
+  "PaymentField8" : "string",
+  "PaymentField9" : "string",
+  "PaymentField10" : "string",
+  "PaymentField11" : "string",
+  "PaymentField12" : "string",
+  "PaymentField13" : "string",
+  "PaymentField14" : "string",
+  "PaymentField15" : "string",
+  "PaymentField16" : "string",
+  "PaymentField17" : "string",
+  "PaymentField18" : "string",
+  "PaymentField19" : "string",
+  "PaymentField20" : "string",
+  "PaymentField21" : "string",
+  "PaymentField22" : "string",
+  "PaymentField23" : "string",
+  "PaymentField24" : "string",
+  "PaymentField25" : "string",
+  "SendToEbitGuard" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e90a084f-3284-49b9-8903-f452743eac41" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

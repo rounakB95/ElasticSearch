@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/fraudConfigurations/phones/verificationAudit" path="/fraudConfigurations/phones/verificationAudit" id="fbacb516-2dca-4d8b-9489-ce07360dfd0e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fbacb516-2dca-4d8b-9489-ce07360dfd0efileName">%2FfraudConfigurations%2Fphones%2FverificationAudit</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetPhoneVerificationAudit" id="0bbbb396-cf7c-468f-a5b2-969bd81719cd" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Page</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>PageSize</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>BridgeIdFilter</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>AccountNoFilter</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>UsernameFilter</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>PhoneFilter</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>RequiredLatestAuditId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>boolean</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "TotalCount" : 0,
+  "Records" : [ {
+    "AccountNo" : 0,
+    "Phone" : "string",
+    "PhoneExtension" : "string",
+    "PhoneVerificationStatus" : "string",
+    "PhoneIsBlackListed" : true,
+    "PhoneBlackListComments" : "string",
+    "AuditID" : 0,
+    "LatestAuditID" : 0,
+    "AuditDate" : "string",
+    "AuditBridgeID" : 0,
+    "AuditUsername" : "string",
+    "AuditPhone" : "string",
+    "AuditPhoneExtension" : "string",
+    "AuditPhoneIsBlackListed" : true,
+    "AuditPhoneBlackListComments" : "string",
+    "AuditPhoneVerificationStatus" : "string",
+    "AuditPhoneVerificationReason" : "string",
+    "AuditVerifyCode" : "string",
+    "AuditVerifyCodeExpiration" : "string",
+    "VerifyCodeReferenceId" : "string",
+    "VerificationOption" : "string",
+    "AuditIPAddress" : "string",
+    "AuditDoneBy" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="b3b680cd-eb06-49cd-aec2-90615961b198" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="AddPhoneVerificationAudit" id="55e61bcc-cb09-4dff-93aa-92db541b26fd" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2c4360f0-9250-4cf1-87fa-7299c6b4bbac" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

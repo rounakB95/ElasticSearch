@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/RefundHistory" path="/customers/RefundHistory" id="e900e33c-0c69-4bd6-abc5-98d801e951b8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e900e33c-0c69-4bd6-abc5-98d801e951b8fileName">%2Fcustomers%2FRefundHistory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetRefundHistory" id="042baa10-baac-470e-b874-0654b8499f5f" method="GET">
+    <con:description>Get refund history</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>startDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>endDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "Status" : "Requested",
+  "RefundRequestDate" : "2015-07-20T15:49:04-07:00",
+  "RefundDate" : "2015-07-20T15:49:04-07:00",
+  "RefundType" : 0,
+  "ClaimNumber" : 0,
+  "AmountRequested" : 1.5,
+  "AmountApproved" : 1.5,
+  "AmountCredited" : 1.5,
+  "DenialReason" : "string",
+  "PrintDate" : "2015-07-20T15:49:04-07:00",
+  "ShipDate" : "2015-07-20T15:49:04-07:00",
+  "TrackingType" : 0,
+  "TrackingNumber" : "string",
+  "Submitter" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3cf579a0-8593-44c3-8b39-2b9f99ba2322" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

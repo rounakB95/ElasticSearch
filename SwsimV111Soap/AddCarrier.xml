@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="90c1aa9d-ab74-463e-975b-84db70285346" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AddCarrier" name="AddCarrier" bindingOperationName="AddCarrier" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="90c1aa9d-ab74-463e-975b-84db70285346fileName">AddCarrier</con:setting>
+  </con:settings>
+  <con:call id="e914e567-33bc-421e-a505-beaff71c1877" name="AddCarrier Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:AddCarrier>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:UserOwnedAccount>?</sws:UserOwnedAccount>\r
+         <sws:Carrier>?</sws:Carrier>\r
+         <!--Optional:-->\r
+         <sws:AccountNumber>?</sws:AccountNumber>\r
+         <!--Optional:-->\r
+         <sws:AccountZIPCode>?</sws:AccountZIPCode>\r
+         <!--Optional:-->\r
+         <sws:AccountCountry>US</sws:AccountCountry>\r
+         <!--Optional:-->\r
+         <sws:Address>\r
+            <!--Optional:-->\r
+            <sws:FullName>?</sws:FullName>\r
+            <!--Optional:-->\r
+            <sws:NamePrefix>?</sws:NamePrefix>\r
+            <!--Optional:-->\r
+            <sws:FirstName>?</sws:FirstName>\r
+            <!--Optional:-->\r
+            <sws:MiddleName>?</sws:MiddleName>\r
+            <!--Optional:-->\r
+            <sws:LastName>?</sws:LastName>\r
+            <!--Optional:-->\r
+            <sws:NameSuffix>?</sws:NameSuffix>\r
+            <!--Optional:-->\r
+            <sws:Title>?</sws:Title>\r
+            <!--Optional:-->\r
+            <sws:Department>?</sws:Department>\r
+            <!--Optional:-->\r
+            <sws:Company>?</sws:Company>\r
+            <!--Optional:-->\r
+            <sws:Address1>?</sws:Address1>\r
+            <!--Optional:-->\r
+            <sws:Address2>?</sws:Address2>\r
+            <!--Optional:-->\r
+            <sws:Address3>?</sws:Address3>\r
+            <!--Optional:-->\r
+            <sws:City>?</sws:City>\r
+            <!--Optional:-->\r
+            <sws:State>?</sws:State>\r
+            <!--Optional:-->\r
+            <sws:ZIPCode>?</sws:ZIPCode>\r
+            <!--Optional:-->\r
+            <sws:ZIPCodeAddOn>?</sws:ZIPCodeAddOn>\r
+            <!--Optional:-->\r
+            <sws:DPB>?</sws:DPB>\r
+            <!--Optional:-->\r
+            <sws:CheckDigit>?</sws:CheckDigit>\r
+            <!--Optional:-->\r
+            <sws:Province>?</sws:Province>\r
+            <!--Optional:-->\r
+            <sws:PostalCode>?</sws:PostalCode>\r
+            <!--Optional:-->\r
+            <sws:Country>US</sws:Country>\r
+            <!--Optional:-->\r
+            <sws:Urbanization>?</sws:Urbanization>\r
+            <!--Optional:-->\r
+            <sws:PhoneNumber>?</sws:PhoneNumber>\r
+            <!--Optional:-->\r
+            <sws:Extension>?</sws:Extension>\r
+            <!--Optional:-->\r
+            <sws:CleanseHash>?</sws:CleanseHash>\r
+            <!--Optional:-->\r
+            <sws:OverrideHash>?</sws:OverrideHash>\r
+            <!--Optional:-->\r
+            <sws:EmailAddress>?</sws:EmailAddress>\r
+            <!--Optional:-->\r
+            <sws:FullAddress>?</sws:FullAddress>\r
+         </sws:Address>\r
+         <!--Optional:-->\r
+         <sws:AgreeToEula>false</sws:AgreeToEula>\r
+         <!--Optional:-->\r
+         <sws:Invoice>\r
+            <sws:ControlID>?</sws:ControlID>\r
+            <sws:InvoiceNumber>?</sws:InvoiceNumber>\r
+            <!--Optional:-->\r
+            <sws:InvoiceAmount>0.0</sws:InvoiceAmount>\r
+            <!--Optional:-->\r
+            <sws:InvoiceDate>0001-01-01</sws:InvoiceDate>\r
+         </sws:Invoice>\r
+         <!--Optional:-->\r
+         <sws:NegotiatedRates>false</sws:NegotiatedRates>\r
+         <!--Optional:-->\r
+         <sws:DeviceIdentity>?</sws:DeviceIdentity>\r
+      </sws:AddCarrier>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/AddCarrier"/>
+  </con:call>
+</con:operation>

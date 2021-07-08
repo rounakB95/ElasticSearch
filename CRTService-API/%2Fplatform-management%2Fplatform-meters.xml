@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/platform-meters" path="/platform-management/platform-meters" id="0dc81014-657c-4f63-9666-42210bc5c423" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0dc81014-657c-4f63-9666-42210bc5c423fileName">%2Fplatform-management%2Fplatform-meters</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AddPlatformMeters" id="95d1544b-2dde-4b06-8b91-d76784d44dae" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="1e2cc64e-99c6-4251-9a28-b7e019e10545" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/resetSecurityQuestions" path="/customers/resetSecurityQuestions" id="626880a9-0262-47f0-ae15-65fafa670a8b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="626880a9-0262-47f0-ae15-65fafa670a8bfileName">%2Fcustomers%2FresetSecurityQuestions</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="ResetSecurityQuestions" id="abbc9bbe-ba97-479f-9dcd-410de30c09d2" method="POST">
+    <con:description>Reset Security Questions</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>username</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>questionType1</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>Unknown = 0, MothersMaidenName = 1, PetsName = 2, Last4SocialSecurityNumber = 5, Last4DriversLicense = 8, BirthCity = 9, HighSchoolMascot = 12, FathersBirthplace = 13, StreetName = 14, FirstSchoolsName = 15, FirstCarsMakeModel = 16</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>answer1</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>questionType2</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>Unknown = 0, MothersMaidenName = 1, PetsName = 2, Last4SocialSecurityNumber = 5, Last4DriversLicense = 8, BirthCity = 9, HighSchoolMascot = 12, FathersBirthplace = 13, StreetName = 14, FirstSchoolsName = 15, FirstCarsMakeModel = 16</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>answer2</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>csrName</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="5f87a2b9-1678-4d51-8d50-7cdae83947b9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

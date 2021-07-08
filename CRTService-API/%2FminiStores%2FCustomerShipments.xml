@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/miniStores/CustomerShipments" path="/miniStores/CustomerShipments" id="df421046-a830-4330-966b-0dd6bced5034" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="df421046-a830-4330-966b-0dd6bced5034fileName">%2FminiStores%2FCustomerShipments</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCustomerShipments" id="a98cf745-0a67-4085-9223-00819f7569dd" method="GET">
+    <con:description>Get Customer Shipments</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Shipments" : [ {
+    "ShipmentId" : 1.5,
+    "Poid" : 1.5,
+    "DateShipped" : "2015-07-20T15:49:04-07:00",
+    "TrackingNo" : "string",
+    "ShippingMethodId" : 0,
+    "ShipmentItems" : [ {
+      "ShipmentId" : 1.5,
+      "Sku" : 0,
+      "Quantity" : 0
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="365c08b6-ceba-4adb-afe8-9ba16118a950" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

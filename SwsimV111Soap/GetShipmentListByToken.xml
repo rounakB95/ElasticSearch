@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="32414456-a320-4a99-880b-db75ccf5a5a1" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetShipmentListByToken" name="GetShipmentListByToken" bindingOperationName="GetShipmentListByToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="32414456-a320-4a99-880b-db75ccf5a5a1fileName">GetShipmentListByToken</con:setting>
+  </con:settings>
+  <con:call id="2c6b0b5d-079a-4224-84cc-9b7e33e12314" name="GetShipmentListByToken Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetShipmentListByToken>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:ShipmentListToken>?</sws:ShipmentListToken>\r
+         <sws:PageNumber>?</sws:PageNumber>\r
+      </sws:GetShipmentListByToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetShipmentListByToken"/>
+  </con:call>
+</con:operation>

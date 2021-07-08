@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7c55952a-839f-44ec-86d3-3ab6010b2665" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetRates" name="GetRates" bindingOperationName="GetRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b030635d-39f7-4f68-b058-555091b081fbfileName">GetRates</con:setting>
+    <con:setting id="7c55952a-839f-44ec-86d3-3ab6010b2665fileName">GetRates</con:setting>
+  </con:settings>
+  <con:call id="9015e3b7-2eed-4cab-b5aa-c25e2620f231" name="GetRates">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsimext.qasc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+  <sws:GetRates>
+			<sws:Credentials>
+				<sws:IntegrationID>88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</sws:IntegrationID>
+				<sws:Username>Rf1_DHL_r2</sws:Username>
+				<sws:Password>password1</sws:Password>
+			</sws:Credentials>
+         <sws:Rate>
+            <sws:FromZIPCode>90245</sws:FromZIPCode>
+            <sws:ToZIPCode>A2345</sws:ToZIPCode>
+            <sws:ToCountry>CA</sws:ToCountry>
+            <sws:ServiceType>US-PMI</sws:ServiceType>
+            <sws:WeightLb>66</sws:WeightLb>
+            
+            <sws:PackageType>Large Envelope or Flat</sws:PackageType>
+            <sws:Length>1.00</sws:Length>
+            <sws:Width>1.00</sws:Width>
+            <sws:Height>0.75</sws:Height>
+            <sws:ShipDate>2018-03-15</sws:ShipDate>
+            <sws:CubicPricing>false</sws:CubicPricing>
+            <sws:ContentType>Document</sws:ContentType>
+         </sws:Rate>
+		</sws:GetRates>
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:jmsPropertyConfig/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetRates"/>
+    <con:wsrmConfig version="1.2"/>
+  </con:call>
+</con:operation>

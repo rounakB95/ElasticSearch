@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2b7e84c4-3c7a-41eb-9a8f-e017c99128b3" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/SetAutoBuy" name="SetAutoBuy" bindingOperationName="SetAutoBuy" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2b7e84c4-3c7a-41eb-9a8f-e017c99128b3fileName">SetAutoBuy</con:setting>
+  </con:settings>
+  <con:call id="c2c48299-0d10-4272-9f4c-18192d83e800" name="SetAutoBuy Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:SetAutoBuy>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:AutoBuySettings>\r
+            <sws:AutoBuyEnabled>?</sws:AutoBuyEnabled>\r
+            <!--Optional:-->\r
+            <sws:PurchaseAmount>0.0</sws:PurchaseAmount>\r
+            <!--Optional:-->\r
+            <sws:TriggerAmount>0.0</sws:TriggerAmount>\r
+         </sws:AutoBuySettings>\r
+      </sws:SetAutoBuy>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/SetAutoBuy"/>
+  </con:call>
+</con:operation>

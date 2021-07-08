@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/purchaseTransactionHistory" path="/customers/purchaseTransactionHistory" id="b4453cb7-9507-4bec-bd9b-405605ebb912" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b4453cb7-9507-4bec-bd9b-405605ebb912fileName">%2Fcustomers%2FpurchaseTransactionHistory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetPurchaseTransactionHistory" id="b29dd5a5-e37e-4cfb-93eb-0d843bff01e6" method="GET">
+    <con:description>Get purchase transaction history</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>custId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>transactionTypeBitwise</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>Postage: 1, Credit: 2, ServiceFee: 4, Refund: 8</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>startDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>endDate</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>meterNumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>resellerAccountId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Transactions" : [ {
+    "PurchaseId" : "string",
+    "PurchaseDate" : "string",
+    "TransactionType" : "string",
+    "TransactionSuccess" : true,
+    "Description" : "string",
+    "Amount" : 1.5,
+    "Status" : "string",
+    "Brand" : "string"
+  } ],
+  "CurrentAccountBalance" : 1.5,
+  "LifetimePostagePurchase" : 1.5
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="731727e0-56f9-4ebb-95ee-0ed813496d25" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

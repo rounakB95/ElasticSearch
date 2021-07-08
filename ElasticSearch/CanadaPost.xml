@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="fa479e3a-49ed-49f3-b31a-fad4d9eff5af" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CanadaPost" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fa479e3a-49ed-49f3-b31a-fad4d9eff5affileName">CanadaPost</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Print" id="d2500129-a52e-4c94-8db4-4e57d31d2d72">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>Test Case Name</con:property>
+      <con:property>Service Type</con:property>
+      <con:property>Package Type</con:property>
+      <con:property>ToCountry</con:property>
+      <con:property>ToAddress</con:property>
+      <con:property>FromAddress</con:property>
+      <con:property>Dimentions</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="2ed78b3a-cf3c-47c0-8a1c-12ff2a9501e2" name="Create Indicium">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV111Soap</con:interface>
+      <con:operation>CreateIndicium</con:operation>
+      <con:request name="Create Indicium" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="10a8cc89-181f-4e58-afbe-a1ae226e9193">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SoapAction" value="${#Project#Namespace}/CreateIndicium" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:CreateIndicium>
+         <sws:Credentials>
+            <sws:IntegrationID>C27D7CDC-076E-4D62-98AA-AE45BF9B4B96</sws:IntegrationID>
+            <sws:Username>rband9778</sws:Username>
+            <sws:Password>pass1$</sws:Password>
+         </sws:Credentials>
+         <sws:IntegratorTxID>${=java.util.UUID.randomUUID()}</sws:IntegratorTxID>
+         <sws:Rate>
+            <sws:From>
+               ${Print#FromAddress}
+            </sws:From>
+            <sws:To>
+               ${Print#ToAddress}
+            </sws:To>
+            <sws:Amount>100</sws:Amount>
+            <sws:ServiceType>${Print#Service Type}</sws:ServiceType>
+            <sws:PrintLayout>Normal4X6</sws:PrintLayout>
+            <sws:DeliverDays>1-1</sws:DeliverDays>
+            <sws:WeightLb>0</sws:WeightLb>
+            <sws:WeightOz>1</sws:WeightOz>
+            <sws:PackageType>${Print#Package Type}</sws:PackageType>
+            ${Print#Dimentions}
+            <sws:ShipDate>${=new java.text.SimpleDateFormat("yyyy-MM-dd").format(new Date())}</sws:ShipDate>
+            <sws:InsuredValue>100.00</sws:InsuredValue>
+            <sws:DeclaredValue>100</sws:DeclaredValue>
+            <sws:RectangularShaped>false</sws:RectangularShaped>
+         </sws:Rate>
+         <sws:Customs>
+            <sws:ContentType>Merchandise</sws:ContentType>
+            <sws:LicenseNumber>License 123</sws:LicenseNumber>
+            <sws:CertificateNumber>Cert No. 345</sws:CertificateNumber>
+            <sws:InvoiceNumber>Invoice 678</sws:InvoiceNumber>
+            <sws:CustomsLines>
+               <sws:CustomsLine>
+                  <sws:Description>Merchandise</sws:Description>
+                  <sws:Quantity>1</sws:Quantity>
+                  <sws:Value>1</sws:Value>
+                  <sws:WeightOz>1</sws:WeightOz>
+                  <sws:HSTariffNumber>3307.30</sws:HSTariffNumber>
+                  <sws:CountryOfOrigin>CA</sws:CountryOfOrigin>
+               </sws:CustomsLine>
+            </sws:CustomsLines>
+            <sws:SendersCustomsReference>Senders</sws:SendersCustomsReference>
+         </sws:Customs>
+         <sws:ImageType>Pdf</sws:ImageType>
+         <sws:nonDeliveryOption>Return</sws:nonDeliveryOption>
+         <!--<sws:GroupCode>${Services#GroupCode}</sws:GroupCode>
+         <sws:Description>${Services#Description}</sws:Description>-->
+      </sws:CreateIndicium>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="db998173-38e9-4d63-a324-da27124767db" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="75566402-056c-48b8-a370-753973b72a74" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/CreateIndicium"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="71f2442d-4489-4920-8b08-8a950500d515" name="Account Info">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>SwsimV111Soap</con:interface>
+      <con:operation>GetAccountInfo</con:operation>
+      <con:request name="Account Info" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="85a5f0dd-c607-4978-8d43-db1b2622f28e">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="SoapAction" value="${#Project#Namespace}/GetAccountInfo" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>${#Project#ServiceEndpoint}</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="${#Project#Namespace}">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sws:GetAccountInfo>
+         <sws:Credentials>
+              <sws:IntegrationID>C27D7CDC-076E-4D62-98AA-AE45BF9B4B96</sws:IntegrationID>
+            <sws:Username>rband459668</sws:Username>
+            <sws:Password>pass1$</sws:Password>
+         </sws:Credentials>
+      </sws:GetAccountInfo>
+   <sws1:GetAccountInfo xmlns:sws1="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111"/></soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="cb9f4326-8a15-46ad-b5ca-62708b3fe0a2" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="badd569f-a798-479a-98d2-2a3400872309" name="Not SOAP Fault"/>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetAccountInfo"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink1" id="a7f8d120-dc1c-4b33-b88f-05ce16043432">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>PackageType</con:name>
+          <con:value>${Print#Package Type}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>serviceType</con:name>
+          <con:value>${Print#Service Type}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>TrackingNumber</con:name>
+          <con:value>${Create Indicium#Response#declare namespace ns1='http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111'; //ns1:CreateIndiciumResponse[1]/ns1:TrackingNumber[1]}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Check Database" id="1f47878c-b882-4c04-a7cf-664de0e6fdd7">
+    <con:settings/>
+    <con:config>
+      <script>import groovy.sql.Sql;
+
+// For this Groovy you need to grab the TrackingNumber from &lt;CreateIndicium>
+def trackingNumber = context.expand( '${DataSink1#TrackingNumber}' )
+ 
+// Then log TrackingNumber
+log.info("TrackingNumber:"+trackingNumber)
+
+// Build and log ConnectionString
+def pOSTALDBServer = context.expand( '${#Project#POSTALDBServer}' )
+def connectionString = "jdbc:sqlserver://"+pOSTALDBServer+":1433;databaseName=Postal;user=qalab;password=StampsQA!"
+
+def commandTest = "SELECT  * FROM [Postal].[dbo].[sdct_Postal_UniversalPrintLog] where ConfirmationNumber = '"+trackingNumber+"'"
+def results =  GetValueFromDb(connectionString,commandTest)
+
+//get all the data points need to be verified
+def UniversalPostageID = 	results[0].UniversalPostageID
+testRunner.testCase.setPropertyValue("UniversalPostageID", UniversalPostageID.toString())
+
+def StampsTxID = results[0].StampsTxID
+testRunner.testCase.setPropertyValue("StampsTxID", StampsTxID)
+
+def ConfirmationNumber = results[0].ConfirmationNumber
+testRunner.testCase.setPropertyValue("ConfirmationNumber", ConfirmationNumber)
+
+def CustId = results[0].CustId
+testRunner.testCase.setPropertyValue("CustId", CustId.toString())
+
+def IntegratorTxID = results[0].IntegratorTxID
+testRunner.testCase.setPropertyValue("IntegratorTxID", IntegratorTxID)
+
+
+
+
+// Now log each of these values in the DataSink
+log.info("UniversalPostageID:"+UniversalPostageID)
+log.info("StampsTxID:"+StampsTxID)
+log.info("ConfirmationNumber:"+ConfirmationNumber)
+
+
+testRunner.testCase.setPropertyValue("UniversalPostageID", UniversalPostageID.toString())
+testRunner.testCase.setPropertyValue("StampsTxID",StampsTxID.toString())
+testRunner.testCase.setPropertyValue("ConfirmationNumber",ConfirmationNumber.toString())
+
+
+////////// METHOD //////////////
+def ArrayList GetValueFromDb(String ConnectionString, String CommandTest){
+	//ArrayList tmpValues = []; 
+	def sql = Sql.newInstance(ConnectionString, "com.microsoft.sqlserver.jdbc.SQLServerDriver")
+	def results = sql.rows(CommandTest)
+	
+	return results;
+}</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="10000" id="234b76ed-611e-4297-bf09-8ab7edc8dfc9">
+    <con:settings/>
+    <con:config>
+      <delay>1000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DB Data Sink" id="37badf6f-60fa-40d7-ad70-2a3c7cfe105e">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="SubReport">
+        <con:configuration/>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>UniversalPostageID</con:name>
+          <con:value>${#TestCase#UniversalPostageID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>StampsTxID</con:name>
+          <con:value>${#TestCase#StampsTxID}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>ConfirmationNumber</con:name>
+          <con:value>${#TestCase#ConfirmationNumber}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>CustId</con:name>
+          <con:value>${#TestCase#CustId}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>IntegratorTxID</con:name>
+          <con:value>${#TestCase#IntegratorTxID}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="Elastic Search" id="4e1d9df1-2d28-4353-979d-8e63b3c2e5fa">
+    <con:settings/>
+    <con:config method="POST" xsi:type="con:HttpRequest" id="10ca0323-22f6-45f9-babc-9da32b5b3993" name="Elastic Search" downloadIncludedResources="false" postQueryString="false" mediaType="application/json" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://vpc-qa007-printhistory-index-t2vuxykqylxrjgqulhezacs2re.us-west-1.es.amazonaws.com/printlog-06-2021/_search?</con:endpoint>
+      <con:request>{
+    "query": {
+                "match" : {  "_id" : "${#TestCase#UniversalPostageID}"}
+            }
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="ELastic Search verification" id="fb4dec0b-ab79-4ed5-bbaf-d1af7eeaef75">
+    <con:settings/>
+    <con:config>
+      <script>// can only be done once we get the end point up and running.
+def hits = context.expand( '${Elastic Search#Response#$[\'hits\'][\'total\'][\'value\']}' )
+def tracking_number = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'tracking_number\']}' )
+def Cust_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'cust_id\']}' )
+def Universal_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'universal_id\']}' )
+def carrier = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'carrier\']}' )
+def username = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'username\']}' )
+def tx_id = context.expand( '${Elastic Search#Response#$[\'hits\'][\'hits\'][0][\'_source\'][\'label\'][\'label_id\']}' )
+
+
+if(hits == "1"){
+	log.info(tracking_number)
+	log.info(Cust_id)
+	log.info(Universal_id)
+	log.info(carrier)
+	log.info(username)
+	log.info(tx_id)
+	
+}else{
+	log.info("Number of hits is greater than 1:"+hits)
+}</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="3560d2c3-38de-40b8-9f66-f9f454ed45fc">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Print</dataSourceStep>
+      <targetStep>Create Indicium</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>UniversalPostageID</con:name>
+      <con:value>6276236274</con:value>
+    </con:property>
+    <con:property>
+      <con:name>StampsTxID</con:name>
+      <con:value>108E555F-7412-4794-BDEE-8CDA950D1A5D</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConfirmationNumber</con:name>
+      <con:value>9461211899560511480112</con:value>
+    </con:property>
+    <con:property>
+      <con:name>CustId</con:name>
+      <con:value>7465149</con:value>
+    </con:property>
+    <con:property>
+      <con:name>IntegratorTxID</con:name>
+      <con:value>d5927776-cd50-4088-b9d2-039d7ea21c83</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>75790b87-5b4d-4d22-b1ea-197175ecbc31</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>7fbb0494-edc9-4298-bb80-37bcb28af21c</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

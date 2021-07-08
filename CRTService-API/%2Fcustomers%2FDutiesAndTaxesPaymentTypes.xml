@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/DutiesAndTaxesPaymentTypes" path="/customers/DutiesAndTaxesPaymentTypes" id="809d368c-8562-4530-a827-f28bc6aa4296" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="809d368c-8562-4530-a827-f28bc6aa4296fileName">%2Fcustomers%2FDutiesAndTaxesPaymentTypes</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetDutiesAndTaxesPaymentTypes" id="4300c541-6723-49d4-b26d-e25a27748ae3" method="GET">
+    <con:description>Get duties and taxes payment types</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "DutiesAndTaxesPaymentTypesCatalog" : [ {
+    "Id" : 0,
+    "Description" : "string"
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2530fbf2-5389-4bb5-8fe2-68f3cd702e40" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

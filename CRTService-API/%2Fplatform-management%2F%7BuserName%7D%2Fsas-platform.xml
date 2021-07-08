@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/{userName}/sas-platform" path="/platform-management/{userName}/sas-platform" id="af131293-62b8-4519-a07e-76893d5d1daf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="af131293-62b8-4519-a07e-76893d5d1daffileName">%2Fplatform-management%2F%7BuserName%7D%2Fsas-platform</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>userName</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="CreateSASPlatform" id="366582f7-7218-4ec2-a020-f6b0132f47b1" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "corp_id" : 0,
+  "reseller_id" : 0,
+  "reseller_partner_id" : 0,
+  "reseller_meter_pools" : [ {
+    "reseller_meter_pool_id" : 0,
+    "rate_set_id" : 0,
+    "reseller_meter_type_id" : 0,
+    "customer_funding_threshold" : 1.5,
+    "stamps_funding_threshold" : 1.5,
+    "stamps_funding_amount" : 1.5,
+    "minimum_transaction_value" : 1.5,
+    "reseller_meter_pool_description" : "string"
+  } ],
+  "default_funding_info" : [ {
+    "platform_meter_pool_type" : { },
+    "customer_funding_threshold" : 1.5,
+    "stamps_funding_threshold" : 1.5,
+    "stamps_funding_amount" : 1.5,
+    "minimum_transaction_value" : 1.5
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="a99f6927-ad91-437f-b506-6dba9aa5e918" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/miniStores/search" path="/miniStores/search" id="f0f2271d-5c76-424b-94eb-11e237a2f308" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f0f2271d-5c76-424b-94eb-11e237a2f308fileName">%2FminiStores%2Fsearch</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="SearchMiniStores" id="f8c569a4-7860-4a73-a101-152f409b6b79" method="GET">
+    <con:description>Search mini store</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Orders" : [ {
+    "Poid" : 1.5,
+    "Original_poid" : 1.5,
+    "CustID" : 0,
+    "DateCreated" : "string",
+    "StatusDate" : "string",
+    "Amount" : 1.5,
+    "ShipToFirstName" : "string",
+    "ShipToMiddleName" : "string",
+    "ShipToLastName" : "string",
+    "ShipToStreet" : "string",
+    "ShipToStreet1" : "string",
+    "ShipToCity" : "string",
+    "ShipToState" : "string",
+    "ShipToZip" : "string",
+    "CSRName" : "string",
+    "Reason" : 0,
+    "Comments" : "string",
+    "ShippingStatus" : 0,
+    "PurchaseStatus" : 0,
+    "OrderStatus" : 0,
+    "Reorders" : [ {
+      "Poid" : 1.5,
+      "Original_poid" : 1.5,
+      "CustID" : 0,
+      "DateCreated" : "string",
+      "Amount" : 1.5,
+      "ShipToFirstName" : "string",
+      "ShipToMiddleName" : "string",
+      "ShipToLastName" : "string",
+      "ShipToStreet" : "string",
+      "ShipToStreet1" : "string",
+      "ShipToCity" : "string",
+      "ShipToState" : "string",
+      "ShipToZip" : "string",
+      "ShippingStatus" : 0,
+      "PurchaseStatus" : 0,
+      "OrderStatus" : 0,
+      "ReOrderItems" : [ {
+        "Poid" : 1.5,
+        "Sku" : 1.5,
+        "Quantity" : 0,
+        "Status" : 0,
+        "DateBatchable" : "string",
+        "ItemNo" : 0
+      } ]
+    } ],
+    "OrderItems" : [ {
+      "Poid" : 1.5,
+      "Sku" : 1.5,
+      "Quantity" : 0,
+      "Status" : 0,
+      "DateBatchable" : "string",
+      "ItemNo" : 0
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="546a0801-9ccb-466c-aec1-d622f24399cd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

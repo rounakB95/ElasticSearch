@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/labelFeeRateSetDetails/{rateSetId}" path="/customers/labelFeeRateSetDetails/{rateSetId}" id="f6a6644a-1aa5-4c58-8f7e-e505bbe480c1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f6a6644a-1aa5-4c58-8f7e-e505bbe480c1fileName">%2Fcustomers%2FlabelFeeRateSetDetails%2F%7BrateSetId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>rateSetId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetLabelFeeRateSetDetails" id="cc1bc3dd-5f96-4109-9f6b-82b787ef3e7e" method="GET">
+    <con:description>Get Label Fee Rate Set Details</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Result" : {
+    "LabelFeeRateID" : 0,
+    "UsesDynamicTiers" : true,
+    "LabelRatePostageTypeID" : 0,
+    "MinFeeAmount" : 1.5,
+    "Ranges" : [ {
+      "RangeStart" : 0,
+      "RangeEnd" : 0,
+      "RangeAmount" : 1.5
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="08ab5707-5157-4f61-8b22-e3fe9266eea3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

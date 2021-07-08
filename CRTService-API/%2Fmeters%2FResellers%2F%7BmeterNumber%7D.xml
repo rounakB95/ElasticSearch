@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/meters/Resellers/{meterNumber}" path="/meters/Resellers/{meterNumber}" id="ed3c8882-0789-4687-90b8-cb1a228054d8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ed3c8882-0789-4687-90b8-cb1a228054d8fileName">%2Fmeters%2FResellers%2F%7BmeterNumber%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>meterNumber</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetSasMeterInfo" id="f604ee3e-8216-45c2-9459-629167efab51" method="GET">
+    <con:description>Get Sas Meter Info</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "ResellerId" : 0,
+  "ResellerMeterPoolId" : 0,
+  "MeterNumber" : 0,
+  "ResellerMeterCustId" : 0,
+  "PostalClusterNumber" : 0,
+  "DescRegInBridge" : 1.5,
+  "AccountAutoBuyThreshold" : 1.5,
+  "AccountAutoBuyAmount" : 1.5,
+  "StampsFundingThreshold" : 1.5,
+  "StampsFundingAmount" : 1.5,
+  "AutoBuyThreshold" : 1.5,
+  "AutoBuyAmount" : 1.5,
+  "LastPostagePurchaseTransactionId" : 0,
+  "LastCustomerFundingLogId" : 0,
+  "Status" : "string",
+  "AmtAvailInPostal" : 1.5,
+  "AmtUtlInPostal" : 1.5,
+  "LastPurchaseTime" : "2015-07-20T15:49:04-07:00",
+  "LastPrintTime" : "2015-07-20T15:49:04-07:00"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="78835242-ffdb-48b9-9895-54f5f9f2fbd4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="UpdateSasMeterStatus" id="a9ecb8f2-cf5b-416d-a903-38c608c12f1d" method="PUT">
+    <con:description>Toggle Sas Meter Status between Enabled/Disabled</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="b52d27c4-de71-4de2-8f3d-3735ca901c0b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

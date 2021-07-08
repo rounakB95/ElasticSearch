@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b244b1df-6884-46d4-a961-a6f3fd84831b" isOneWay="false" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetBalanceHistoryByToken" name="GetBalanceHistoryByToken" bindingOperationName="GetBalanceHistoryByToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b244b1df-6884-46d4-a961-a6f3fd84831bfileName">GetBalanceHistoryByToken</con:setting>
+  </con:settings>
+  <con:call id="be4bf299-9271-4e4e-bc1f-04ad12895288" name="GetBalanceHistoryByToken Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qa007.aws.local/swsim/swsimv111.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetBalanceHistoryByToken>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:BalanceHistoryToken>?</sws:BalanceHistoryToken>\r
+         <!--Optional:-->\r
+         <sws:PageNumber>1</sws:PageNumber>\r
+      </sws:GetBalanceHistoryByToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2021/01/swsim/SwsimV111/GetBalanceHistoryByToken"/>
+  </con:call>
+</con:operation>

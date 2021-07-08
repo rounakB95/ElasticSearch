@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/platform-management/{resellerId}/platform-meters" path="/platform-management/{resellerId}/platform-meters" id="a0623f0c-6a72-4939-adfd-8886dc47cd4d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a0623f0c-6a72-4939-adfd-8886dc47cd4dfileName">%2Fplatform-management%2F%7BresellerId%7D%2Fplatform-meters</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>resellerId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetPlatformMeters" id="ac850f01-e88e-419f-ae66-2b4277f979fe" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "user_name" : "string",
+  "user_id" : 0,
+  "cust_id" : 0,
+  "reseller_meter_pool_id" : 0,
+  "meter_no" : 1.5,
+  "rate_set_id" : 0,
+  "mid" : "string",
+  "post_registration_step" : { },
+  "is_failed" : true,
+  "failed_reason" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="bf591343-77b1-4d4c-8224-2bae35ea0aab" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

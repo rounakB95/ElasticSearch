@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="1f5f04ab-0248-4c9c-b964-030e9c77e744" isOneWay="false" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetBalanceHistoryByToken" name="GetBalanceHistoryByToken" bindingOperationName="GetBalanceHistoryByToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d918d734-d794-49e3-974d-90859294b250fileName">GetBalanceHistoryByToken</con:setting>
+    <con:setting id="1f5f04ab-0248-4c9c-b964-030e9c77e744fileName">GetBalanceHistoryByToken</con:setting>
+  </con:settings>
+  <con:call id="e8fe7af6-5062-4a46-ab1b-3de27116e3b1" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://swsim.qacc.stamps.com/swsim/swsimv60.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sws="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <sws:GetBalanceHistoryByToken>\r
+         <!--You have a CHOICE of the next 2 items at this level-->\r
+         <!--Optional:-->\r
+         <sws:Authenticator>?</sws:Authenticator>\r
+         <!--Optional:-->\r
+         <sws:Credentials>\r
+            <sws:IntegrationID>?</sws:IntegrationID>\r
+            <sws:Username>?</sws:Username>\r
+            <sws:Password>?</sws:Password>\r
+         </sws:Credentials>\r
+         <sws:BalanceHistoryToken>?</sws:BalanceHistoryToken>\r
+         <!--Optional:-->\r
+         <sws:PageNumber>1</sws:PageNumber>\r
+      </sws:GetBalanceHistoryByToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://stamps.com/xml/namespace/2017/02/swsim/swsimv60/GetBalanceHistoryByToken"/>
+  </con:call>
+</con:operation>

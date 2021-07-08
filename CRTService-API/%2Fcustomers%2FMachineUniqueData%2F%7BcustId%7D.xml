@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/customers/MachineUniqueData/{custId}" path="/customers/MachineUniqueData/{custId}" id="2cdffda6-9659-4fe2-82ba-3f038573fb0d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2cdffda6-9659-4fe2-82ba-3f038573fb0dfileName">%2Fcustomers%2FMachineUniqueData%2F%7BcustId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>custId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetMachineUniqueData" id="85cf4934-9acb-49ab-82b9-e8bdc86a4d1b" method="GET">
+    <con:description>Get Machine Unique Data</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "IpAddress" : "string",
+  "SystemDriveSerialNumberHash" : "string",
+  "SystemVolumeGuidHash" : "string",
+  "SystemVolumeSerialNumberHash" : "string",
+  "MacAddressHash" : "string",
+  "StampsMachineGuidHash" : "string",
+  "DataSetNumber" : 0,
+  "DateSubmitted" : "2015-07-20T15:49:04-07:00"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "Error" : {
+    "Code" : "string",
+    "Message" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d193db24-f56d-43f6-ba9d-8db7432a7d1f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
