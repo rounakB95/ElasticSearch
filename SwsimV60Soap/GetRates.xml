@@ -15,9 +15,9 @@
    <soapenv:Body>\r
   <sws:GetRates>
 			<sws:Credentials>
-				<sws:IntegrationID>88F8BA27-2FBC-4601-A055-E4BAA7BBDBFB</sws:IntegrationID>
-				<sws:Username>Rf1_DHL_r2</sws:Username>
-				<sws:Password>password1</sws:Password>
+				<sws:IntegrationID>${#Global#IntegrationID_Global}</sws:IntegrationID>
+				<sws:Username>${Data Source#Username}</sws:Username>
+				<sws:Password>${Data Source#Password}</sws:Password>
 			</sws:Credentials>
          <sws:Rate>
             <sws:FromZIPCode>90245</sws:FromZIPCode>
